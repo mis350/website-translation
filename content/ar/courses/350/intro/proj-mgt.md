@@ -22,88 +22,89 @@ diagram: True
 
 ---
 
-تتمحور إدارة المشروع حول ضمان تنفيذ المشروع وفقًا للمواصفات وضمن ميزانية الوقت والموارد.  يتضمن ذلك التأكد من أن كل عضو في الفريق يعرف ما يفترض أن يفعله.
+Project management is about ensuring that the project is completed to specification and within time and resource budget. This involves ensuring each team member knows what they are supposed to do.
 
- سنبتعد عن إدارة المشاريع التقليدية ونستخدم نهجًا أكثر مرونة. يتمثل الاختلاف الرئيسي في النهج المرن  أنه
-- من المتوقع أن تتغير متطلبات التطوير  وبالتالي يستخدم الفريق الأدوات ويعمل مع توقع إمكانية تغيير المتطلبات.
-- مشاركة العملاء والمطورين في إدارة المشروع ضرورية للنجاح.  يجب أن يكون للمطورين مبادرة لاختيار المهام التي يعملون عليها والمشاركة في تحديث المتطلبات والإبلاغ عن التقدم المحرز في عملهم.
+We will depart from traditional project management and use a more agile approach. The main difference is that with agile development:
+- Requirements are expected to change, therefore we use different tools to track requirements and focus on priorities.
+- Customers and developer involvement in project management is necessary for success. Developers must have initiative to choose the tasks they work on and participate in updating requirements and report progress on their work. 
 
-تم أيضًا تغيير دور مدير المشروع بشكل طفيف:
+The project manager's role is also changed slightly:
 
- - قد يساهم في المشروع مثل أي مطور آخر من خلال العمل على المتطلبات واقتراح متطلبات جديدة.
- - يضمن وجود مهام كافية لإبقاء الجميع مشغولين
- - توجيه المشروع من خلال تحديد أولويات المهام ومراقبة التقدم وحل المشكلات.
- - كما نمنح مدير المشروع مسؤولية دمج عمل أعضاء الفريق في المشروع.  قد تختار الفرق المختلفة مهام سير عمل مختلفة.
- - تهيئة بيئة المشروع حيث يمكن لأعضاء الفريق التعاون.
+- Might contribute to the project like any other developer would, by working on requirements and suggesting new ones.
+- Ensures that there are enough tasks to keep everyone busy
+- Guide the project by prioritizing tasks, monitoring progress, and resolving problems.
+- We will also give the project manager the responsibility of merging the work of team members into the project. Different teams might choose different workflows.
+- Setting up the project environment where team members can collaborate.
 
-### انشاء مشروع/ريبو GitHub
+### Creating a GitHub Project/Repo
 
-هناك طريقتان رئيسيتان يمكن لمدير المشروع من خلالهما إنشاء مشروع:
+There are two main ways in which a project manager can create a project:
 
- 1. إنشاء ريبو (Repository) فارغ جديد إما من GitHub أو دفع (Push) مشروع جديد من Replit.com إلى GitHub.
- 2. عمل (Fork) مشروع قائم موجود على GitHub ، والذي من شأنه أن يسمح للفريق بالبناء على هذا المشروع الحالي.
+1. Creating a new empty repository either from GitHub or pushing a new project from Replit.com to GitHub.
+2. Forking an existing project found on GitHub, which would allows the team to build on this existing project.
 
- بمجرد إنشاء المشروع ، سيكون الأمر يتعلق بالتنسيق مع أعضاء الفريق وتعيين المهام والتعاون لضمان تسليم المشروع للنظام الذي كان من المفترض بناؤه.  يقدم GitHub عددًا من الأدوات المفيدة لتمكين مديري المشاريع من إدارة المشاريع ، والتي سنناقشها في القسم التالي.
+Once a project is created, it would be a matter of coordinating with team members and assigning tasks and collaborating to ensure the project delivers the system it was intended to build. GitHub offers a number of useful tools to enable project managers to manage projects, which we will discuss in the next section.
 
-## أدوات إدارة المشروع
+## Project Management Tools
 
- بمجرد إعداد المشروع ، تتوفر الأدوات التالية التي يستخدمها كل من مدير المشروع وأعضاء الفريق للتنسيق:
+Once the project is setup the following tools are available that both the project manager and team members use to coordinate:
 
-### 1. مشكلات GitHub
+### 1. GitHub Issues
 
- يمكن أن تمثل مشكلة GitHub أشياء كثيرة في مشروع برمجي.  سواء كانت ميزة تحتاج إلى البناء ، أو خطأ يحتاج إلى إصلاح ، أو فكرة يجب مناقشتها ، أو وثائق يجب كتابتها ، أو أي مهمة أخرى (البرمجة أو التنسيق أو غير ذلك) التي يحتاج فريق المشروع إلى إكمالها أو مناقشتها ، يمكن تمثيلها  باستخدام مشكلة في GitHub.  يوضح الشكل التالي مثالاً لمشروع على GitHub يسمى ** Ruby on Rails ** حيث يتعاون المئات من المطورين.  يمكنك معرفة كيف تصف بعض المشكلات المشكلات التي تحتاج إلى إصلاح وغيرها من طلبات الميزات.  البعض لديه مناقشات مرتبطة بهم والبعض الآخر ينتظرون مطورًا لبدء العمل عليها:
+A GitHub issue could represent many things in a software project. Whether its a feature that needs to be built, a bug that needs fixing, an idea to be discussed, documentation to be written, or any other task (programming or coordination or other) that the project team needs to complete or discussed can be represented using a GitHub issue. The following figure shows an example project on GitHub called **Ruby on Rails** where hundreds of developers collaborate. You can see how some issues describe problems that need fixing and other are feature requests. Some have discussions associated with them and some are just there waiting for a developer to start working on them:
 
 {{< figure src="courses/350/issues.png" caption="Example Issue List from Ruby on Rails Project" >}}
 
-من الطرق الجيدة لبدء قائمة المشكلات تحويل متطلبات المشروع إلى قائمة بالمشكلات على GitHub.  ولكن عند القيام بذلك ، يجب عليك التأكد من أن كل مشكلة تصف مهمة محددة للغاية.  سينظر أعضاء الفريق إلى قائمة المشكلات ويحددون المهمة التي يمكنهم العمل عليها.  على سبيل المثال ، يحتوي المشروع المستخدم لترجمة موقع الويب الحالي على قائمة المشكلات التالية:
+A good way to start start the issues list is to convert the project requirements into a list of issues on GitHub. But when you do that, you must ensure that each issue describes a very specific task. Team members would look at the issue list and identify a task that they could work on. For example, the project used to translate the current website has the following issue list:
 
 {{< figure src="courses/350/translate-issues.png" caption="Example Issue List from Ruby on Rails Project" >}}
 
-يمكنك أن ترى أن القائمة بسيطة للغاية ، بالنظر إلى أن المشروع بسيط.  كل مشكلة تمثل ترجمة ملف واحد.  ستكون هذه أداة تنسيق مفيدة للغاية بين أعضاء الفريق ، حيث يمكن لأحد الأعضاء اختيار ترجمة أحد الملفات عن طريق تعيين المشروع لأنفسهم.  سيسمح هذا للأعضاء الآخرين بمعرفة أن هذه المهمة قيد العمل على أحد زملائهم في الفريق وأنهم بحاجة إلى البحث عن مهمة أخرى لإكمالها.  يمكن لمديري المشروع أيضًا اختيار تعيين المشكلة لأعضاء محددين حتى يعرفوا أن المهمة هي مسؤوليتهم.  يوضح الشكل التالي كيف يمكن تعيين المهام:
+You can see the list is very simple, given that the project is simple. Each issue represent the translation of a single file. This would be a very useful coordination tool between team members, as one member can choose to translate one of the files by assigning the project to themselves. This would let other members know that this task is being worked on one of their team mates and they need to look for another task to complete. Project Managers can also choose to assign the issue to specific members so they would know that the task is their responsibility. The following figure shows how tasks can be assigned:
 
 {{< figure src="courses/350/translate-issues.png" caption="Assigning an Issue to A Team Member or to Yourself" >}}
 
 {{% callout note %}}
-تأكد من أنك تقوم دائمًا بتعيين مهمة لنفسك قبل أن تبدأ العمل في مهمة.  إذا لم تكن المهمة في القائمة ، فقم بإنشائها.  سيسمح هذا لأعضاء فريقك بمعرفة ما تعمل عليه.
+Make sure that you always assign your self a task before you start work on a task. If the task is not in the list, then create it. This would allows your team members to know what you are working on.
 {{% /callout %}}
 
-قائمة المشكلات هي قائمة ديناميكية.  يجب أن يتغير على أساس يومي / أسبوعي إذا كان المشروع نشطًا.  نظرًا لأن المشكلات تمثل المتطلبات ، فإنها تعكس أيضًا كيفية تغيير المتطلبات باستمرار أثناء تحديث قائمة المشكلات.
+The issues list is a dynamic list. It should be changing on a daily/weekly bases if the project is active. It since the issues represent requirements, it also reflects how the requirements are constantly changing as the issue list is updated.
 
-#### **من يكتب المشكلات؟**
+#### Who Writes The Issues?
 
- يتم تقاسم مسؤولية كتابة المشكلات بين مدير المشروع والمطورين وحتى مستخدمي المشروع.  إذا كان لدى أحد الأعضاء فكرة جديدة يحتاجون إلى كتابتها ، أو إذا اكتشفوا خطأً يحتاج إلى إصلاح ، فإنهم يلتقطون ذلك عن طريق إنشاء مشكلة ووصف الفكرة أو المشكلة.  يحتاج مدير المشروع إلى التأكد من وجود مشكلات كافية في قائمة المشكلات لأعضاء الفريق للعثور على عمل لإكماله ، كما أن مدير المشروع مسؤول أيضًا عن تحديد أولويات العمل.  لكن أولوية المشكلات غير معروضة هنا ، بل تظهر في لوحة المشروع التي سنشرحها بعد ذلك.
+The responsibility of writing the issues is shared between the project manager, the developers, and even the users of the project. If a member has a new idea that they need to be written, or if they discover a bug that needs fixing, then they capture this by creating an issue and describing the idea or problem. The project manager needs to ensure that there are enough issues in the issue list for the team members to find work to complete, the project manager is also responsible for prioritizing the work. But priority of issues is not shown here, it is shown in the project board which we will explain next.
 
 {{% callout note %}}
-سواء كنت مدير المشروع أو عضوًا في الفريق ، يمكنك إنشاء مشكلات لالتقاط الأفكار والمهام التي تريد أن يعمل عليها الفريق.
+Whether you are the project manager or a member in the team, you can create issues to capture ideas bugs and tasks you want the team to work on. 
 {{% /callout %}}
 
-### 2. لوحة المشروع
+### 2. Project Board
 
- تقدم لوحة المشروع نظرة عامة مرئية حول كيفية تقدم المشروع.  تظهر مهام المشروع (المعروفة بالمشكلات على GitHub) كتذاكر.  لذلك ، سنستخدم المصطلحات ** المشكلة والمهمة والتذكرة ** بالتبادل.  يتم تنظيم التذاكر في ثلاثة أعمدة مختلفة على النحو التالي:
+The project board gives a visual overview of how the project is progressing. The project tasks (known as issues on GitHub) are shown as tickets. Therefore, we will use the terms **issue, task, and ticket** interchangeably. The tickets are organized in three different columns as follows:
 
- 1. ** المهام: ** يتم وضع التذاكر التي تم إنشاؤها حديثًا هنا ولا يعمل عليها أحد.  يتضمن ذلك الأخطاء والميزات الجديدة التي قد يرغب المطورون في دمجها في المشروع.  التذاكر الموضوعة في الجزء العلوي من العمود لها أولوية أعلى ، وتقع على عاتق مدير المشروع مسؤولية تنظيم هذه التذاكر حسب الأولوية في هذا العمود.  يتم تشجيع المطورين على اختيار تذاكر للعمل عليها من أعلى عمود ** المهام **.
+1. **To do:** Newly created tickets are placed here which no one is working on. This includes bugs and new features that developers might want to incorporate in the project. Tickets placed at the top of the column have higher priority, and it is the responsibility of the project manager to organize these tickets by priority in this column. Developers are encouraged to pick tickets to work on from the top of the **to do** column.
 
 {{< figure src="courses/350/project-board.png" caption="Project Board Showing the Columns and Tickets" >}}
 
-2. ** قيد التنفيذ: ** يجب نقل التذاكر التي يطالب بها الأعضاء للعمل عليها من قبل العضو الذي يعمل عليها ، حتى يعرف مدير المشروعما يتم العمل عليه.  يوضح لك المقطع التالي كيفية المطالبة بتذكرة للعمل عليها بنفسك:
+2. **In Progress:** Tickets claimed by members to work on must be moved here by the member working on them, so that the project manager will know what is being worked on. The following clip shows you how to claim a ticket for your self to work on:
 
 ![](/gifs/claim-ticket.gif)
 
 
-3. ** تم: ** تم نقل التذاكر المكتملة هنا ، حيث يعلم مدير المشروع أن هناك طلب سحب يجب دمجه.  بمجرد دمج طلب السحب ، يتم أرشفةالتذكرة.  ما عليك سوى سحب التذكرة التي أكملتها من العمود ** قيد التقدم ** إلى العمود ** تم ** ولا تنس إنشاء طلب سحب.
+3. **Done:** Completed tickets are moved here, where project manager will know that there is a pull request that needs to be merged. Once the pull request is merged the ticket is archived. Simply drag the ticket you completed from **In Progress** column to **Done** column and do not forget to create a pull request.
 
 
 {{% callout note %}}
-يجب على مدير المشروع طلب التذاكر في قائمة المهام حسب الأولوية من الأعلى إلى الأسفل.  يتم تشجيع أعضاء الفريق على اختيار التذاكر للعمل عليها من أعلى قائمة المهام.
+The project manager should order tickets in the To To list by priority from top to bottom. Team members are encouraged to select tickets to work on from the top of the To Do List.
 {{% /callout %}}
 
-يقوم أعضاء الفريق بنقل التذاكر بشكل صحيح من عمود إلى آخر ، سيحصل مدير المشروع بسهولة على فكرة عامة عمن يعمل في أي مهمة.  تشير التذكرة المتبقية لفترة طويلة جدًا إلى وجود مشكلة في هذه المهمة أو في العضو الذي يعمل عليها.  سيتطلب ذلك تدخل مدير المشروع.
+Provided team members move the tickets correctly from one column to another, the project manager will easily get a general idea of who is working on which task. A ticket remaining for a very long would signal that there is a problem with that task or the member working on it. This will require the intervention of the project manager.
 
-** اجتماعات تنسيق أسبوعية أو نصف أسبوعية: ** سيكون من المفيد جدًا أن يجتمع الفريق على أساس أسبوعي أو كل أسبوعين حيث يتم عرض لوحة المشروع وتناقش أولوية تذاكر المهام وأي تحديات تواجه المشروع  .  يمكن للأعضاء أيضًا العمل معًا لإيجاد حلول مشتركة أو اقتراح تذاكر جديدة لتضمينها في قائمة المهام ..
+**Weekly or Bi-Weekly coordination meetings:** It would be very helpful of a team would meet on a weekly or bi-weekly bases where the project board is shown and priority of To Do tickets are discussed and any challenges facing the project. Members could also work together towards finding common solutions or suggest new tickets to include in the to do list..
+
+## Tips on Writing Issues/Tickets
+
+The best method to write useful task descriptions is to write issues/tickets as **user stories**. User stories describe the functionality of a system and the tasks to work on from the perspective of the user. It details what the user does and why. A single user story should describe a single functionality. If the functionality is complex, then you can break it down into smaller user stories.
+
+The following [blog post on how to write user stories](https://medium.com/innovation-machine/how-and-why-to-write-great-user-stories-f5a110668246) is an excellent start for anyone looking to improve how they write tickets for a software project.
 
 
-## نصائح حول كتابة المشكلات / التذاكر
-
-أفضل طريقة لكتابة أوصاف مهمة مفيدة هي كتابة المشكلات / التذاكر كـ ** قصص مستخدم **.  تصف قصص المستخدم وظائف النظام والمهام التي يجب العمل عليها من منظور المستخدم.  إنها توضح ما يفعله المستخدم ولماذا.  يجب أن تصف قصة مستخدم واحد وظيفة واحدة.  إذا كانت الوظيفة معقدة ، فيمكنك تقسيمها إلى قصص مستخدم أصغر.
-
-تعد [مشاركة مدونة حول كيفية كتابة قصص المستخدم] (https://medium.com/innovation-machine/how-and-why-to-write-great-user-stories-f5a110668246) بداية ممتازة لأي شخص يبحث  لتحسين طريقة كتابتهم للتذاكر لمشروع برمجي.

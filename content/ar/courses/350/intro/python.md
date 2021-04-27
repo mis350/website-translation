@@ -1,20 +1,20 @@
 ---
 # Page title
-title: Python Review
+title: مراجعة البايثون
 
 # Title for the menu link if you wish to use a shorter link title, otherwise remove this option.
-linktitle: Python
+linktitle: باثون
 
 # Date page published
-date: 2021-03-23
+date: ٢٣-٣-٢٠٢١
 
 # Academic page type (do not modify).
-type: book
+type: كتاب
 
 # Position of this page in the menu. Remove this option to sort alphabetically.
-weight: 2
+weight: ٢
 
-draft: False
+draft: لا يوجد
 
 ---
 
@@ -22,15 +22,15 @@ draft: False
 Slides for this section can be found [here]({{< ref "/slides/350/python/index.md" >}})
 {{% /callout %}}
 
-## Prerequisite
+## المتطلبات المسبقة
 
-Having completed and introductory course in programming is required. It doesn't have to be in Python as the ideas are still the same.
+مطلوب إكمال مقرر مدخل في البرمجة، لا يتطلب ان يكون بلغة البايثون لأن الأفكار لا تزال كما هي. 
 
-## The Review
+## المراجعة
 
-Given the limited time we have in this course, we will go over some necessary topics on Python, but will defer the review to the Lab and for you to read some online tutorials on the language.
+نظرًا للوقت المحدود المتاح لنا في هذه الدورة التدريبية ، سنناقش بعض الموضوعات الضرورية حول لغة البايثون ، لكننا سنأجل المراجعة إلى المختبر ولكي تقرأ بعض البرامج التعليمية عبر الإنترنت حول اللغة.
 
-If your prior programming course was on a different languages, for example Visual Basic or Java, then the same idea apply in Python. There are variables, functions, loops, and if statements as you have come to expect and use. The only difference is that you need to learn the syntax. For example, in VB you might write and if statement like this:
+إذا كان مقررات البرمجة السابقة الخاصة بك على لغات مختلفة ، على سبيل المثال Visual Basic أو Java ، فإن نفس الفكرة تنطبق في Python. هناك متغيرات ووظائف وحلقات وعبارات if كما تتوقعها وتستخدمها. الاختلاف الوحيد هو أنك بحاجة إلى تعلم بناء الجملة. على سبيل المثال ، في VB قد تكتب و if عبارة مثل هذا:
 ```
 If x > 5 Then
     ` Do something like display this message
@@ -38,50 +38,49 @@ If x > 5 Then
 End If
 ```
 
-In Python, it would by like so:
+:في لغة البايثون ، سيكون الأمر كذلك
 ```python
 if c > 5:
     # Do something like display this message
     print("The condition is True!")
 ```
 
-## Online Resources
+## المصادر عى الانترنت:
 
-Go through any one of following online references and it will be suffecient in reviewing the Python language syntax:
+قم بالاطلاع على أي من المراجع التالية عبر الإنترنت وسيكون ذلك كافيًا لمراجعة كتابة جملة لغة البايثون:
 
-1. [Python for You and Me](https://pymbook.readthedocs.io/en/latest/)
-2. [Learn Python](https://www.learnpython.org/)
-3. [The Python Guru](https://thepythonguru.com/)
-4. [Python Basics](https://pythonbasics.org/)
+1. [البايثون لي ولك](https://pymbook.readthedocs.io/en/latest/)
+2. [تعلم البايثون](https://www.learnpython.org/)
+3. [خبير البايثون](https://thepythonguru.com/)
+4. [أساسيات البايثون](https://pythonbasics.org/)
 
-## New Topics
+## مواضيع جديدة
 
-There are a few topics that we haven't covered in our introduction to Python which we will cover in this course:
+هناك بعض المواضيع التي لم نقم بتغطيتها في مقدمتنا إلى البايثون والتي سنغطيها في هذا المقرر:
 
-### Exceptions
+### الإستثناءات
 
-Exceptions are like if statements, they perform a task conditionally. The difference is in how the condition is evaluated.
+الاستثناءات هي مثل عبارات if ، فإنها تؤدي مهمة مشروطة. يكمن الاختلاف في كيفية تقييم الحالة.
 
-In if statements, the condition is checked before the execution of the conditional code, therefore, the condition always comes before the conditional code:
+في عبارات if ، يتم التحقق من الشرط قبل تنفيذ الكود الشرطي ، لذلك يأتي الشرط دائمًا قبل الكود الشرطي:
 ```python
 if condition:
     # perform conditional code
 ```
-Whereas with exception, the condition is in the form of the existance of an exception (also known as an error). So the computer would perform some code normally, but we instruct the computer to perform the conditional code if a specific error occured while executing the code. So the condition is tied to the occurance of an error (or exceptional) event:
+بينما ، باستثناء ، الشرط في شكل وجود استثناء (المعروف أيضًا باسم خطأ). لذلك سيقوم الكمبيوتر بتنفيذ بعض التعليمات البرمجية بشكل طبيعي ، لكننا نوجه الكمبيوتر لتنفيذ الكود الشرطي في حالة حدوث خطأ معين أثناء تنفيذ الكود. لذا فإن الشرط مرتبط بحدوث خطأ (أو حدث استثنائي):
 ```python
 try: #1
     received_data = socket.read() #2
 except IOException as ioe: #3
     print("Connection disconnected") #4
 ```
+لاستخدام الاستثناءات في Python ، يتعين علينا كتابة الأسطر # 1 و # 3. يتم ملاحظة الرمز بينهما بواسطة الكمبيوتر. هنا ، وجهنا الكمبيوتر لقراءة مقبس الشبكة وتخزين البيانات المستلمة. تخبر المحاولة / باستثناء الكمبيوتر أثناء تنفيذ # 2 ، إذا حدث خطأ من النوع IOException ، مثل انقطاع الاتصال بالشبكة ، فقم بإجراء # 4.
 
-To use exceptions in python we have to write lines #1 and #3. The code between them is observed by the computer. Here, we instructed the computer to read a network socket and store the received data. The try/except tells the computer while executing #2, if an error of the type IOException occurs, like network disconnection, then perform #4.
+الموقف الوحيد الذي يتم فيه تنفيذ رقم 4 هو عندما يكون هناك خطأ في قراءة الشبكة مما يؤدي إلى حدوث استثناء IOException. يرجى قراءة ما يلي [مقال عن الاستثناءات](https://pythonbasics.org/try-except/).
 
-The only situation in which #4 is performed is when there is an error in reading the network causing an IOException to occur. Please read the following [article on exceptions](https://pythonbasics.org/try-except/).
+### قائمة الفهم
 
-### List Comprehensions
-
-One of the common tasks performed on lists is to process the data in them and construct other lists. For example, the following code would create a new list from an existing one containing only even numbers:
+تتمثل إحدى المهام الشائعة التي يتم إجراؤها في القوائم في معالجة البيانات الموجودة فيها وإنشاء قوائم أخرى. على سبيل المثال ، سينشئ الكود التالي قائمة جديدة من قائمة حالية تحتوي فقط على أرقام زوجية:
 
 ```python
 data = [2, 3, 4, 5, 10, 34, 1]
@@ -91,28 +90,28 @@ for x in data:
         even_numbers.append(x)
 ```
 
-With list comprehensions, we can perform the same thing with just a single line:
+باستخدام list comprehensions ، يمكننا أداء نفس الشيء بسطر واحد فقط:
 
 ```python
 data = [2, 3, 4, 5, 10, 34, 1]
 even_numbers = [x for x in data if x % 2 == 0]
 ```
 
-Please read the following [article on list comprehensions](https://www.pythonforbeginners.com/basics/list-comprehensions-in-python).
+يرجى قراءة ما يلي [مقال في قائمة الفهم](https://www.pythonforbeginners.com/basics/list-comprehensions-in-python).
 
-### Object Oriented Programming
+### البرمجة الشيئية
 
-Object Oriented Programming (OOP) is a way of structuring your program. So far, we learned to write programs as a single unit, where all the code is in a single file that performs all the requirements.
+البرمجة الشيئية (OOP) هي طريقة لتنظيم برنامجك. حتى الآن ، تعلمنا كتابة البرامج كوحدة واحدة ، حيث يكون كل الكود في ملف واحد يؤدي جميع المتطلبات.
 
-Then we learned how to structure our code into functions and organize them in different files. This is called structural programming is an improvement on how we learned to program initially.
+ثم تعلمنا كيفية هيكلة الكود الخاص بنا إلى وظائف وتنظيمها في ملفات مختلفة. يسمى هذا بالبرمجة الهيكلية وهو تحسين على كيفية تعلمنا البرمجة في البداية.
 
-Another improvement over structual programming is Object Oriented Programming (OOP). The idea is similar to structural programming in which we reorganize the code. However, it is different in the way we organize and group things. In structural programming, we only created functions that performed tasks and tried to group releated tasks together in the same file. With object oriented programming, we group related **data and functions** together and put them in a single unit called a call. We also cannot directly use the class, we must create an object (also known as an instance) of this class that contains a copy of the data and functions.
+هناك تحسين آخر على البرمجة الهيكلية وهو البرمجة الشيئية (OOP). تشبه الفكرة البرمجة الهيكلية التي نعيد فيها تنظيم الكود. ومع ذلك، تختلف في طريقة تنظيم الأشياء وتجميعها. في البرمجة الهيكلية ، أنشأنا فقط الوظائف التي تؤدي المهام وحاولنا تجميع المهام ذات الصلة معًا في نفس الملف. باستخدام البرمجة الشيئية ، نقوم بتجميع ** البيانات والوظائف ** ذات الصلة معًا ووضعها في وحدة واحدة تسمى استدعاء. لا يمكننا أيضًا استخدام الفئة بشكل مباشر ، يجب علينا إنشاء كائن (يُعرف أيضًا باسم نموذج) من هذه الفئة يحتوي على نسخة من البيانات والوظائف.
 
-Classes define how an object will look like and are like a blue print of a building. We cannot live in the blue print! we must construct the building first based on the drawing. The same is with classes. The computer cannot use a class, however, we can instruct the computer to create an object based on the definition described in the class.
+تحدد الفئات كيف سيبدو الكائن وتشبه المخطط للمبنى. لا يمكننا العيش في المخططء! يجب أن نبني المبنى أولاً بناءً على الرسم. نفس الشيء مع الفئات. لا يمكن للكمبيوتر استخدام فئة ، ومع ذلك ، يمكننا توجيه الكمبيوتر لإنشاء كائن بناءً على التعريف الموضح في الفئة.
 
-An example of a class would be Human. When you see a human, you can recognize them as they all have heads, hands, legs, and very similar general features. However, each human is unique in that they have their own name, color, fingerprint, age ...etc. Each individual is equivalent to an object in OOP, whereas the human race is equivalent to a class.
+مثال على الفئة سيكون الإنسان. عندما ترى إنسانًا ، يمكنك التعرف عليهم لأن لديهم جميعًا رؤوسًا وأيديًا وأرجلًا وميزات عامة متشابهة جدًا. ومع ذلك ، فإن كل إنسان فريد من نوعه من حيث أن له اسمه ولونه وبصمة أصابعه وعمره ... إلخ. كل فرد يعادل كائنًا في البرمجة الشيئية ، في حين أن الجنس البشري يعادل فئة.
 
-In addition to the organizational benefits of OOP, like hiding complexity (called encapsulation), it also introduces the concept of inheritence where we can derive one class from another, which allows us to reuse code. **We will be using OOP and espciailly inheritence heavily in this course**. For more details, please refer to chapter 10 of the python textbook and read the [following article](https://realpython.com/python3-object-oriented-programming/)
+بالإضافة إلى الفوائد التنظيمية لـ البرمجة الشيئية ، مثل إخفاء التعقيد (يسمى التغليف) ، فإنه يقدم أيضًا مفهوم الميراث حيث يمكننا اشتقاق فئة من فئة أخرى ، مما يسمح لنا بإعادة استخدام الكود. ** سنستخدم الميراث  و البرمجة الشيئية  بكثافة في هذه الدورة **. لمزيد من التفاصيل ، يرجى الرجوع إلى الفصل 10 من كتاب Python وقراءة [المقالة التالية](https://realpython.com/python3-object-oriented-programming/)
 
 [{{< icon name="youtube" pack="fab" >}}Watch this YouTube video list](https://www.youtube.com/playlist?list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc) for an excellent introduction to OOP
 

@@ -1,20 +1,20 @@
 ---
 # Page title
-title: مراجعة البايثون
+title: Python review 
 
 # Title for the menu link if you wish to use a shorter link title, otherwise remove this option.
-linktitle: باثون
+linktitle: Python
 
 # Date page published
-date: ٢٣-٣-٢٠٢١
+date: 23-3-2021
 
 # Academic page type (do not modify).
-type: كتاب
+type: Book
 
 # Position of this page in the menu. Remove this option to sort alphabetically.
-weight: ٢
+weight: 2
 
-draft: لا يوجد
+draft: False
 
 ---
 

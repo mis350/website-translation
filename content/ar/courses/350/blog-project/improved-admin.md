@@ -145,4 +145,4 @@ admin.site.register(Post, PostAdmin)
 
 
 هناك بالتأكيد المزيد حول واجهة المسؤول التي لا يمكننا تغطيتها في هذه الدورة التدريبية. الطريقة لمعرفة ما هو متاح هي الاستمرار في قراءة: [Django admin documentation](https://docs.djangoproject.com/en/3.1/ref/contrib/admin/) 
-وتجريب الميزات الجديدةز
+وتجريب الميزات الجديدة.

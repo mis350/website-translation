@@ -19,9 +19,9 @@ draft: False
 
 ---
 
-Web applications are applications that run in the web browser. Web applications have replaced desktop applications because of the following benefits:
+تطبيقات الويب هي تطبيقات تعمل في متصفح الويب.  حلت تطبيقات الويب محل تطبيقات سطح المكتب بسبب الفوائد التالية:
 
-1. **Interoperability**: Since browsers are available on all kinds of computers and phones in the current age regardless of the specifications or the operating system used. Therefore, they can be used by a larger number of potential customers.
+1. ** إمكانية التشغيل البيني **: نظرًا لأن المتصفحات متوفرة على جميع أنواع أجهزة الكمبيوتر والهواتف في العصر الحالي بغض النظر عن المواصفات أو نظام التشغيل المستخدم.  لذلك ، يمكن استخدامها من قبل عدد أكبر من العملاء المحتملين.
 2. **Manageability**: The code is developed once and maintained on a central web server. To update the application or fix bugs, the owner of the application is required to only update the application on their server and all clients would benefit from the update. Unlike desktop applications where customers are required to download newer versions of the application. In web applications, the update happens transparently.
 3. **Relative Security**: While security will always be a challenge, the fact that the application is managed in a central location means that the owner has more control in terms of monitoring, management, and updating the application. Making security **relatively** easier compared to **server** based desktop applications. 
 4. **Rapid Improvement in tools and Capabilities**: Given the level of innovation occuring in the web application development tools and infrastructure, there is a certain type of applciations or tasks that can only be implemented when using a web application asthe web application infrastructure can grow to accomidate a greater number of users and capabilities. For example, the big data era has been brought about due to the emergence of the web applications at scales that serve global customers. 

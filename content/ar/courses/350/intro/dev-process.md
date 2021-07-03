@@ -18,7 +18,7 @@ draft: False
 
 
 ---
-## What is Django?
+
 ## ما هو جانغو؟  
 
 جانغو هو إطار عمل لتطوير موقع التطبيقات بما يعني هو مجموعة من القواعد والمكتبات والأعراف التي يمكن إستعمالها لتسهيل عملية بناء موقع تطبيقي. 
@@ -26,7 +26,6 @@ draft: False
 
 
 
-## The Steps in the Development Process
 ## الخطوات في عملية التطوير 
 
 فائدة أخرى للالتزام بطريقة جانغو للعمل هو أنه يجعل عملية التطوير أكثر قابلة للتنبؤ. إذا كان الجزء العملي من متطلبات المعلومات معروفين سابقاً فتعمل طريقة التطوير بالخطوات الآتية: 
@@ -67,11 +66,16 @@ F -->|Refine or Work on Next Subproject|B
 يوصى بشدة بفتح خادم الويب في نافذة المتصفح الخاصة به. سيسمح لك ذلك بالتنقل بسهولة في تطبيق الويب الخاص بك عن طريق إدخال عناوين URL مختلفة لاختبار أجزاء مختلفة من التطبيق.
 
 
-
-
 {{< figure src="courses/350/project-structure.png" caption="Project Structure" >}}
 
 
+### 2- بدء التطبيق أو المشروع الفرعي
+
+يتم تنظيم كل التعليمات البرمجية في أدلة تسمى التطبيقات. الخطوة الأولى في أي مشروع هي إعداد بنية الدليل لملفات التعليمات البرمجية في المصدر. لدى Django طريقة خاصة جدًا لتنظيم الملفات. كما يتطلب أيضًا أن نضع رمزًا متعلقًا بوظائف مختلفة في ملفات معينة. على سبيل المثال ، عادةً ما يتم وضع التعليمات البرمجية المتعلقة بقاعدة البيانات في model.py والوظائف المرتبطة بـ http في views.py وما إلى ذلك.
+
+الوحدة التنظيمية لوظيفة Django هي تطبيق. إنه دليل يحتوي على شفرة مصدر ذات صلة لخدمة وظيفة محددة في تطبيق الويب. يجب أن يحتوي كل مشروع على دليل تطبيق واحد على الأقل للاحتفاظ بالوظيفة الوظيفية التي أنشأها المبرمج. يوفر Django عددًا من أوامر shell لتوليد بنية الدليل اللازمة للمشروع بحيث يمكن للمطورين بدء مشاريعهم بسهولة. سنناقش هذه الخطوة بمزيد من التفاصيل في نموذج مشروعنا ، لكن ضع في اعتبارك أن هذه الخطوة ضرورية ويتم تنفيذها مرة واحدة في بداية المشروع.
+
+ {{< figure src="courses/350/app.png" caption="Example App Directory" >}}
 
 ### 2- Start App or Subproject
 
@@ -80,6 +84,32 @@ All code is organized into directories called apps. The first step in any projec
 The organizational unit for Django functionality is an App. It is a directory containing related source code to serve a specific function in the web application. Every project must have at least a single app directory to hold the functionaloty created by the developer. Django provides a number of shell commands to generate the directory structure needed for a projust so that developers might start their projects easily. We will discuss this step in more detail in our sample project, but keep in mind that this step is necessary and is done once at the start of the project.
 
 {{< figure src="courses/350/app.png" caption="Example App Directory" >}}
+
+### 3- تحديد نماذج البيانات
+
+تصف نماذج البيانات كيف تبدو البيانات في مشروعك. إذا كنت قد أكملت دورة تحليل وتصميم الأنظمة ، فهذا ما تقوم بتنفيذه كنتيجة لمخطط ER الذي تقوم بتطويره في مرحلة جمع متطلبات البيانات. تصف مخططات ER الكيانات التي تتوافق مع جداول قاعدة البيانات العلائقية. مع وجود حقول لكل كيان يتوافق مع أعمدة الجدول في قاعدة البيانات العلائقية. ** الكيان ** هو شيء تريد جمع معلومات عنه ، على سبيل المثال ، طالب. الحقل هو المعلومات التي تجمعها عن هذا الكيان ، على سبيل المثال ، يعد اسم الطالب والرقم الجامعي للطالب أمثلة على الحقول.
+
+يتوافق النموذج في Django أيضًا مع جدول قاعدة البيانات العلائقية حيث سيقوم Django بإنشاء جدول لكل نموذج لديك في Models.py. لذلك ، يجب أن يكون لكل الكيانات الخاصة بك في تصميمك نموذج مطابق في نماذجك. py. سيحتوي نموذج django على الحقول التي سيُنشئ بها django عمودًا في الجدول المقابل لذلك النموذج. فيما يلي مثال على ملف model.py في Django:
+```python
+from django.db import models
+
+class Author(models.Model):
+    first_name = models.CharField(max_length=50)
+    last_name = models.CharField(max_length=50)
+    country = models.CharField(max_length=100)
+
+class Book(models.Model):
+    artist = models.ForeignKey(Musician, on_delete=models.CASCADE)
+    title = models.CharField(max_length=100)
+    release_date = models.DateField()
+    num_stars = models.IntegerField()
+
+```
+بدون تعريف. py ، لن تتمكن من تخزين البيانات لتطبيقك وإبقائها ثابتة. على سبيل المثال ، قد تحتاج إلى تخزين أسماء المستخدمين وكلمات المرور. لذلك ، يجب أن يكون هناك نموذج مستخدم به حقل اسم مستخدم وحقل كلمة مرور. هذا يعني أنك ستخزن اسم مستخدم وكلمة مرور لكل مستخدم في قاعدة البيانات الخاصة بك. ** يُعرف السجل الفردي الذي يحتوي على اسم مستخدم وكلمة مرور لمستخدم واحد باسم object **. إن تحديد نموذج المستخدم يعني أننا نريد تخزين العديد من مواضيع المستخدم (أو السجلات) ، واحدة لكل مستخدم باستخدام تطبيق الويب الخاص بنا.
+
+باتباع القواعد التي وضعها Django عند إنشاء النماذج ، ستحصل على العديد من المزايا الإضافية ، مثل القدرة على إدارة جميع البيانات باستخدام واجهة الويب التي أنشأها Django لك تلقائيًا. يمكنك أيضًا الحصول على القدرة على استخدام قواعد بيانات مختلفة مع تطبيق الويب الخاص بك ببساطة عن طريق تغيير تكوين قاعدة البيانات في ملف mysite / settings.py الخاص بك. يوفر Django أيضًا القدرة على الاستعلام عن قاعدة البيانات وإرجاع مواضيع البيانات التي تلبي معايير معينة.
+
+بمجرد تحديد متطلبات البيانات الخاصة بنا في Models.py ، يمكننا الانتقال إلى الخطوة التالية في بناء الوظائف الفعلية لتطبيق الويب الخاص بنا.
 
 ### 3- Define Data Models
 

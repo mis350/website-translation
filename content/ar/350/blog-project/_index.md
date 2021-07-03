@@ -30,24 +30,24 @@ image:
 
 ---
 
-## Requirements
+## المتطلبات
 
-- [ ] Blogger can post on blog where text, title, and time of posting is shown
-- [ ] Blog post can be draft or published
-- [ ] Blog posts will have titles, readable urls (called slugs and generated from title), a body, and will show the date and time it was created and edited
-- [ ] Blogger can edit blog posts and system will show last time it was updated
-- [ ] Website will show a list of blogposts with summary of the body
-- [ ] User can select a post from the list of blog posts to view the details
-- [ ] Assume there is a single author for all blog posts that never change 
+- [ ] يمكن للمدون النشر على المدونة حيث يظهر النص والعنوان ووقت النشر
+- [ ] يمكن أن تكون مدونة وظيفة مشروع أو نشرها
+- [ ] سيكون مشاركات المدونة عناوين ، عناوين URL للقراءة (تسمى الرخويات ويتم إنشاؤها من العنوان) ، وهي هيئة ، وسوف تظهر التاريخ والوقت الذي تم إنشاؤه وتحريره
+- [ ] يمكن تحرير مدون بلوق وظائف ونظام سوف تظهر آخر مرة تم تحديثه
+- [ ] سوف يعرض الموقع قائمة من blogposts مع ملخص للجسم
+- [ ] يمكن للمستخدم اختيار وظيفة من قائمة بلوق وظائف لعرض التفاصيل
+- [ ] افترض أن هناك مؤلف واحد لجميع بلوق الوظائف التي لا تتغير أبدا 
 
-#### Some Useful Tips
+#### بعض النصائح المفيدة
 
-- Consider the requirements as a checklist that you check everytime you complete one. When you have completed all requirements then your project is complete. 
-- For most requirements, you will go through the the process described in the [Django Development Process]({{< ref dev-process.md >}})
+- النظر في المتطلبات باعتبارها قائمة التحقق التي تقوم بفحصها في كل مرة تقوم فيها بإكمال واحدة. عندما تكون قد أكملت جميع المتطلبات، يكتمل مشروعك. 
+- بالنسبة لمعظم المتطلبات، سوف تمر عبر العملية الموضحة في [عملية تطوير جانغو]({{< ref dev-process.md >}})
 
 ## ER-Diagram
 
-The ER-Diagram describes the data requirements and will be used for constructing the project's data models in models.py. The blog data model is currently very simple and contains a single entity:
+يصف مخطط التقارير الإلكترونية متطلبات البيانات وسيتم استخدامه لإنشاء نماذج بيانات المشروع في models.py. نموذج بيانات المدونة بسيط جدا حاليا ويحتوي على كيان واحد:
 
 ```mermaid
 erDiagram
@@ -62,25 +62,24 @@ erDiagram
     
 ```
 
-## How To Follow Along This Project
+## كيفية متابعة هذا المشروع
 
-First, Create a repl by importing from the github repo **malmarz/isom350-blog** as shown here:
+أولا، إنشاء repl عن طريق الاستيراد من الريبو github **malmarz/isom350-blog** كما هو موضح هنا:
 
 {{< figure src="courses/350/github-repl.png" caption="Creating Replit Project from GitHub Repo" >}}
 
-Then, once the project is created, you can easily view the implementation step by switching to the approriate branch. For example, to see the code to implement the data model step in the development, you switch to the data model branch through version control as shown in here:
+ثم، بمجرد إنشاء المشروع، يمكنك بسهولة عرض خطوة التنفيذ عن طريق التبديل إلى فرع approriate. على سبيل المثال، لمشاهدة التعليمات البرمجية لتنفيذ خطوة نموذج البيانات في التطوير، يمكنك التبديل إلى فرع نموذج البيانات من خلال التحكم بالإصدار كما هو موضح هنا:
 
 {{< figure src="courses/350/project-vcs.png" caption="Switching to Solution Branches" >}}
 
-Similarly you can switch to the appropriate step to see how it is implemented.
+وبالمثل يمكنك التبديل إلى الخطوة المناسبة لمعرفة كيفية تنفيذها.
+يرجى ملاحظة أنه يجب عليك تنفيذ نفس الخطوة بنفسك لمعرفة كيفية تطوير تطبيقات الويب. انتقل إلى فرع الحل للتحقق من الحل ومعرفة كيف كان بإمكانك القيام بذلك بشكل صحيح.
 
-Please note however, you must attemp to implement the same step on your own to learn how to develop web applications. Switch to the solution branch to check your solution and learn how you could have done it correctly.
+### كيفية محاولة إنشاء المشروع بنفسك.
 
-### How to Attempt Build The Project Yourself.
-
-1. Create a new repl that is based on the **Django Template**.
-2. Attempt to build the project by completing the [requirements listed here]({{< ref "blog-project#requirements" >}})
-3. If stuck, open the solution project and compare against your work
-4. Attempt to read the [Django Project Documentation](https://docs.djangoproject.com/en/3.1/) and think of ways to improve your web application beyond the requirements.
-5. Feel free to demonstrate your work to others by sharing the test URL for your project. Just make sure that the Django test server is running, otherwise they will not be able to test your web application.
+1. إنشاء repl جديد يستند إلى **Django Template**.
+2. محاولة بناء المشروع من خلال استكمال [المتطلبات المذكورة هنا]({{< ref "blog-project#requirements" >}})
+3. إذا كان عالقا، افتح مشروع الحل وقارنه بعملك
+4. محاولة قراءة [Django وثائق المشروع](https://docs.djangoproject.com/en/3.1/) والتفكير في طرق لتحسين تطبيق الويب الخاص بك وراء المتطلبات.
+5. لا تتردد في عرض عملك للآخرين من خلال مشاركة عنوان URL الاختبار لمشروعك. فقط تأكد من أن خادم اختبار Django قيد التشغيل ، وإلا فلن يتمكنوا من اختبار تطبيق الويب الخاص بك.
 

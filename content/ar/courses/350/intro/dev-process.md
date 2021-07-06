@@ -77,14 +77,6 @@ F -->|Refine or Work on Next Subproject|B
 
  {{< figure src="courses/350/app.png" caption="Example App Directory" >}}
 
-### 2- Start App or Subproject
-
-All code is organized into directories called apps. The first step in any project is to setup the directory structure for the source code files. Django has a very particular way in which files must be organized. It also requires that we put code related for different functionality in specific files. For example, database related code is usually placed in models.py, and http related functionality in views.py and so on. 
-
-The organizational unit for Django functionality is an App. It is a directory containing related source code to serve a specific function in the web application. Every project must have at least a single app directory to hold the functionaloty created by the developer. Django provides a number of shell commands to generate the directory structure needed for a projust so that developers might start their projects easily. We will discuss this step in more detail in our sample project, but keep in mind that this step is necessary and is done once at the start of the project.
-
-{{< figure src="courses/350/app.png" caption="Example App Directory" >}}
-
 ### 3- تحديد نماذج البيانات
 
 تصف نماذج البيانات كيف تبدو البيانات في مشروعك. إذا كنت قد أكملت دورة تحليل وتصميم الأنظمة ، فهذا ما تقوم بتنفيذه كنتيجة لمخطط ER الذي تقوم بتطويره في مرحلة جمع متطلبات البيانات. تصف مخططات ER الكيانات التي تتوافق مع جداول قاعدة البيانات العلائقية. مع وجود حقول لكل كيان يتوافق مع أعمدة الجدول في قاعدة البيانات العلائقية. ** الكيان ** هو شيء تريد جمع معلومات عنه ، على سبيل المثال ، طالب. الحقل هو المعلومات التي تجمعها عن هذا الكيان ، على سبيل المثال ، يعد اسم الطالب والرقم الجامعي للطالب أمثلة على الحقول.
@@ -110,6 +102,95 @@ class Book(models.Model):
 باتباع القواعد التي وضعها Django عند إنشاء النماذج ، ستحصل على العديد من المزايا الإضافية ، مثل القدرة على إدارة جميع البيانات باستخدام واجهة الويب التي أنشأها Django لك تلقائيًا. يمكنك أيضًا الحصول على القدرة على استخدام قواعد بيانات مختلفة مع تطبيق الويب الخاص بك ببساطة عن طريق تغيير تكوين قاعدة البيانات في ملف mysite / settings.py الخاص بك. يوفر Django أيضًا القدرة على الاستعلام عن قاعدة البيانات وإرجاع مواضيع البيانات التي تلبي معايير معينة.
 
 بمجرد تحديد متطلبات البيانات الخاصة بنا في Models.py ، يمكننا الانتقال إلى الخطوة التالية في بناء الوظائف الفعلية لتطبيق الويب الخاص بنا.
+
+### 4- إنشاء وظيفة العرض
+
+وظيفة العرض هي كيفية إنشاء وظائف في Django. وظيفة العرض هي وظيفة من الإطار الأول وهي طلب HTTP. سيستخدم Django هذه الوظائف لإعادة توجيه طلبات HTTP إلى الكود الخاص بنا باستخدام هذه الوسيطة الأولى في الوظيفة حيث يمكننا كتابة التعليمات البرمجية لمعالجتها وتنفيذ مهام تطبيق الويب.
+
+الشرط الثاني لوظيفة العرض هو أنه يجب أن يقوم بإرجاع استجابة HTTP. يوفر Django بعض وظائف التواصل التي تجعل تكوين الردود أمرًا سهلاً للمطور. الفشل في تحديد هذين الشرطين عند تحديد وظيفة العرض يعني أن Django لن يكون قادرًا على تشغيل الوظيفة بشكل صحيح. 
+
+الشرط الثالث هو أكثر من مجرد مبادئ توجيهية أو اتفاقية ، حيث يتم وضع هذه الوظائف في views.py. من الممكن وضعها في مكان آخر ، لكن مطوري Django توقعوا العثور على وظائف تطبيق ويب Django موضوعة في views.py. سأكون في غاية يوصي أن تلتزم بهذه الاتفاقية. فيما يلي مثال على وظيفة عرض بسيطة تُستخدم لإرجاع صفحة HTML تعرض الوقت الحالي:
+
+```python
+from django.http import HttpResponse
+import datetime
+
+def current_datetime(request):
+    now = datetime.datetime.now()
+    html = "<html><body>It is now %s.</body></html>" % now
+    return HttpResponse(html)
+```
+بمجرد إنشاء وظيفة العرض ، يمكنك استخدام واجهة سطر أوامر Python لاختبار هذه الوظائف والتأكد من أنها تؤدي المهام الصحيحة. لن تكون الوظيفة متاحة لمستخدمي تطبيق الويب ما لم تتبع متطلبات الخطوة التالية.
+
+### 5- عناوين URL السلكية
+
+تتضمن هذه الخطوة تعيين مسار لوظيفة العرض التي أنشأناها. على سبيل المثال ، إذا كانت لديك وظيفة عرض Authenticate_user تتحقق إذا كان المستخدم مصرح له باستخدام تطبيق webb أم لا ، فقد ترغب في أن ينتقل المستخدمون إلى / مسار المصادقة في متصفحهم. تتضمن هذه الخطوة تعيين وظائف العرض التي قمت بإنشائها إلى مسار ، وبهذه الطريقة يعرف Django الوظيفة التي يجب تشغيلها بناءً على المسار الذي يفتحه المتصفح.
+
+يتم تعيين عناوين url في ملف urls.py الموجود في دليل مشروع mysite ، جنبًا إلى جنب مع ملف settings.py. فيما يلي مثال على تعيين عنوان URL لوظيفة العرض التي أنشأناها في قسم previos حيث يظهر الوقت الحالي:
+ 
+ ```python
+from django.urls import include, path
+# Import the view function we created
+from timeapp.views import current_datetime 
+
+urlpatterns = [
+    # Mapp the path time/ to the view function current_datetime
+    path('time/', current_datetime, name='current-time'),
+]
+```
+
+### 6- (template)إنشاء نموذج
+
+عادةً ما يشترك المصممون والمطورون في بناء تطبيقات الويب. يركز المصممون على الشكل الذي يبدو عليه تطبيق الويب ويعمل بشكل أساسي مع HTML و CSS. بينما يعمل المطورون مع نماذج Django وعرض الوظائف. النموذج أو القالب هو ما يجمع عمل هذين العضوين في الفريق معًا.
+
+القالب أو النموذج (template) هو ببساطة ملف نصي أو HTML به عناصر نائبة ، تمامًا مثل الأقواس المتعرجة في  fstrings  python ، لكن النماذج تستخدم أقواسًا متعرجة مزدوجة لتضمين عناصر نائبة. تتمثل إحدى مهام وظيفة العرض في تمرير جميع المتغيرات التي تم إنشاؤها في وظيفة العرض (المعروفة باسم context) إلى نظام قالب django ، ويقوم نظام القالب(template) بتوصيل قيم هذه المتغيرات في العناصر النائبة الصحيحة لإنشاء HTML خاص بهذا الطلب.
+
+إذا واصلنا مثال اسم المستخدم وكلمة المرور الخاصين بنا ، فبعد أن قام المستخدم بتسجيل الدخول ، فقد نقوم باسترداد المعلومات التالية التي نريد عرضها للمستخدم:
+- اسم المستخدم
+- البريد الإلكتروني
+- تاريخ آخر تسجيل دخول
+- رصيد المستخدم
+
+ترسل وظيفة العرض هذه القيم إلى نظام القوالب(templates) ، حيث أنشأ المصممون صفحة HTML جيدة المظهر وحددوا العناصر النائبة للمكان الذي يجب عرض كل هذه المعلومات فيه ، ويتم إنشاء صفحة HTML بالمعلومات من هذه العملية. تتضمن وظيفة العرض بعد ذلك صفحة HTML  مع الاستجابة بحيث يمكن عرضها للمستخدم.
+
+فيما يلي مثال على وظيفة العرض التي تستخدم نظام القوالب لإنشاء استجابة HTTP تلقائيًا استنادًا إلى القالب:
+```python
+from django.shortcuts import render
+
+from .models import Question
+
+
+def index(request):
+    latest_question_list = Question.objects.order_by('-pub_date')[:5]
+    context = {'latest_question': latest_question_list}
+    return render(request, 'polls/index.html', context)
+```
+سيكون ملف القالب(templates) عبارة عن ملف html يشبه هذا ، حيث يمكنك أن ترى أنه يمكنك تضمين منطق شرطي لعرض أجزاء من المستند إذا كانت البيانات موجودة أم لا. في مثال الجولة ، إذا كان السؤال الأخير موجودًا ، فسيتم عرض رابط إليه. خلاف ذلك ، يتم عرض رسالة * للمستخدم * لا توجد استطلاعات * متاحة:
+
+```
+<html>
+    <body>
+    {% if latest_question %}
+        <ul>
+            <li><a href="/polls/{{ latest_question.id }}/">{{ latest_question.question_text }}</a></li>
+        </ul>
+    {% else %}
+        <p>No polls are available.</p>
+    {% endif %}
+    </body>
+</html>
+```
+سوف يمر المطورون بهذه الدورة لكل وظيفة سيتم تطويرها في هذا التطبيق. لذلك ، إذا كان هناك فريق من المطورين يعملون معًا على التطبيق ، فعادةً ما يعمل كل مطور على وظيفة منفصلة ثم يدمج عملهم لاحقًا بمجرد إكمال هذه الوظيفة ، ثم يبدأ العمل على الآخر.
+
+
+(END OF ARABIC TRANSLATION)
+### 2- Start App or Subproject
+
+All code is organized into directories called apps. The first step in any project is to setup the directory structure for the source code files. Django has a very particular way in which files must be organized. It also requires that we put code related for different functionality in specific files. For example, database related code is usually placed in models.py, and http related functionality in views.py and so on. 
+
+The organizational unit for Django functionality is an App. It is a directory containing related source code to serve a specific function in the web application. Every project must have at least a single app directory to hold the functionaloty created by the developer. Django provides a number of shell commands to generate the directory structure needed for a projust so that developers might start their projects easily. We will discuss this step in more detail in our sample project, but keep in mind that this step is necessary and is done once at the start of the project.
+
+{{< figure src="courses/350/app.png" caption="Example App Directory" >}}
 
 ### 3- Define Data Models
 

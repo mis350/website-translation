@@ -48,6 +48,30 @@ Overview of Django Development Process
 
 ---
 
+## Django's Development Model
+
+- Django is a fullstack MVT web framework.
+- Fullstack because it provides everything we need to build an app, from database handling to templates.
+- It is MVT because its main components are:
+
+1. **Models:** To handle data
+2. **Views:** To handle business logic
+3. **Templates:** To handle how screens will look
+
+When building apps, we work on models, views, and templates to introduce new features.
+
+---
+
+## Benefits of MVT model
+
+- Enables collaboration because work on each component is placed in a different file
+- Team members can specialize
+  - Data engineers focus on models
+  - Backend engineers focus on views
+  - Frontend engineers/designers focus on templates
+
+---
+
 ```mermaid
 graph TD
 A[Setup Project] --> B[Start App for Subproject]

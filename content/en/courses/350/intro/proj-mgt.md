@@ -108,3 +108,8 @@ The best method to write useful task descriptions is to write issues/tickets as 
 The following [blog post on how to write user stories](https://medium.com/innovation-machine/how-and-why-to-write-great-user-stories-f5a110668246) is an excellent start for anyone looking to improve how they write tickets for a software project.
 
 
+## Review Questions
+
+- How would you use tickets in your development project?
+- What is the role of a project manager?
+- What role do team members, other than the project manager, play in project management?

@@ -118,3 +118,10 @@ In addition to the organizational benefits of OOP, like hiding complexity (calle
 
 
 {{< youtube ZDa-Z5JzLYM >}}
+
+## Review Questions
+
+- What are exceptions? What can we use them for?
+- What are list comprehensions?
+- What is OOP? What are its benefits?
+- What is inheritance? Give an example where we have used it in this course (For final)

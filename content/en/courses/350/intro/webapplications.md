@@ -228,3 +228,12 @@ In this course will only touch upon some of the features of Django. Using Django
 - and many more
 
 However, keep in mind that as the site grows and more engineers are hired to work on it, other technologies are utilized to manage the infrastructure. Therefore, we cannot say that these websites are built using only Django or Python. But they evolved to include other technologies and languages each serving a specific purpose. Ideas are typically initially implemented with a single technology however. Should they evolve to incorporate other technologies is likely a sign that the service is successful and is growing.
+
+## Review Questions
+
+- How is a web application different from a desktop application? be sure to discuss pros and cons of each
+- What is the difference between a web page and a web application?
+- What are the main components needed to run a modern Django based web application?
+- What was unique about web2.0 web applications?
+- What was unique about HTML5 web applications?
+- What is the request-response cycle in web applications? Explain how it works.

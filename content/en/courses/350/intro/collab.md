@@ -152,3 +152,12 @@ There are numerous terms that you need to be aware of to use Git and GitHub effe
 | **Upstream** | Git | The chain of remote repositories that the current repo cloned from. Pushing code upstream requires effort, as conflict must be eliminated. Pull requests are typically sent to repos in the upstream. |
 | **Downstream** | Git | The network of all repos that have been cloned from the current repo. Code trickles down effortlessly, as the responsibility of resolving conflict is delegated to the developers in the downstream when they pull from the current repo. |
 
+
+## Review questions
+
+- What is the difference between synchronous and asynchronous collaboration?
+- When using replit.com to collaborate with a colleague, are you engaging in synchronous or asynchronous collaboration? Explain why?
+- When using GitHub to collaborate and merge the contributions of different developers, is this considered synchronous or asynchronous collaboration? Explain why?
+- What is a Git branch? How would it be useful when working with a team of developers?
+- When working on a development project, explain what was the workflow that you used as a team to coordinate between each other?
+- What is a pull request? What is a conflict? How would you deal with a conflict in a pull request?

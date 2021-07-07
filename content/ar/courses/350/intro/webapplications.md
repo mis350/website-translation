@@ -18,28 +18,28 @@ draft: False
 
 
 ---
+تطبيقات الويب هي تطبيقات تعمل في متصفح الويب. حلت تطبيقات الويب محل تطبيقات سطح المكتب بسبب الفوائد التالية:
 
-تطبيقات الويب هي تطبيقات تعمل في متصفح الويب.  حلت تطبيقات الويب محل تطبيقات سطح المكتب بسبب الفوائد التالية:
 
+1. **التوافقية**: حيث أن المتصفحات متوفرة على جميع أنواع أجهزة الكمبيوتر والهواتف في العصر الحالي بغض النظر عن المواصفات أو نظام التشغيل المستخدم. لذلك ، يمكن استخدامها من قبل عدد أكبر من العملاء المحتملين.
+2. **سهولة الإدارة**: تم تطوير الكود مرة واحدة والاحتفاظ بها على خادم ويب مركزي. لتحديث التطبيق أو إصلاح الخلل ، يجب على مالك التطبيق تحديث التطبيق فقط على الخادم الخاص به وسوف يستفيد جميع العملاء من التحديث. على عكس تطبيقات سطح المكتب حيث يُطلب من العملاء تنزيل إصدارات أحدث من التطبيق. في تطبيقات الويب ، يتم التحديث بشفافية.
+3. **الأمن النسبي**: على الرغم من أن الأمان يمثل تحديًا دائمًا ، فإن حقيقة أن التطبيق يُدار في موقع مركزي يعني أن المالك يتمتع بقدر أكبر من التحكم فيما يتعلق بمراقبة التطبيق وإدارته وتحديثه. جعل الأمان ** أسهل نسبيًا ** مقارنة بتطبيقات سطح المكتب القائمة على الخادم. 
+4. **تحسن سريع في الأدوات والقدرات**: نظرًا لمستوى الابتكار الذي يحدث في أدوات تطوير تطبيقات الويب والبنية التحتية ، هناك نوع معين من التطبيقات أو المهام التي لا يمكن تنفيذها إلا عند استخدام تطبيق ويب حيث يمكن أن تنمو البنية التحتية لتطبيقات الويب لاستيعاب عدد أكبر من المستخدمين والقدرات. على سبيل المثال ، نشأ عصر البيانات الضخمة بسبب ظهور تطبيقات الويب على نطاقات تخدم العملاء العالميين. 
 
-1. ** إمكانية التشغيل البيني **: نظرًا لأن المتصفحات متوفرة على جميع أنواع أجهزة الكمبيوتر والهواتف في العصر الحالي بغض النظر عن المواصفات أو نظام التشغيل المستخدم.  لذلك ، يمكن استخدامها من قبل عدد أكبر من العملاء المحتملين.
-2. **Manageability**: تم تطوير الكود مرة واحدة والاحتفاظ بها على خادم ويب مركزي. لتحديث التطبيق أو إصلاح الخلل ، يجب على مالك التطبيق تحديث التطبيق فقط على الخادم الخاص به وسوف يستفيد جميع العملاء من التحديث. على عكس تطبيقات سطح المكتب حيث يُطلب من العملاء تنزيل إصدارات أحدث من التطبيق. في تطبيقات الويب ، يتم التحديث بشفافية.
-3. **Relative Security**: على الرغم من أن الأمان يمثل تحديًا دائمًا ، فإن حقيقة أن التطبيق يُدار في موقع مركزي يعني أن المالك يتمتع بقدر أكبر من التحكم فيما يتعلق بمراقبة التطبيق وإدارته وتحديثه. جعل الأمان ** أسهل نسبيًا ** مقارنة بتطبيقات سطح المكتب القائمة على الخادم. 
-4. **Rapid Improvement in tools and Capabilities**: نظرًا لمستوى الابتكار الذي يحدث في أدوات تطوير تطبيقات الويب والبنية التحتية ، هناك نوع معين من التطبيقات أو المهام التي لا يمكن تنفيذها إلا عند استخدام تطبيق ويب حيث يمكن أن تنمو البنية التحتية لتطبيقات الويب لاستيعاب عدد أكبر من المستخدمين والقدرات. على سبيل المثال ، نشأ عصر البيانات الضخمة بسبب ظهور تطبيقات الويب على نطاقات تخدم العملاء العالميين. 
    
 ومع ذلك ، تأتي تطبيقات الويب مع مجموعة التحديات الخاصة بها:
-1. **Complexity of Infrastructure**:لم يعد تطوير التطبيقات مجرد مسألة بناء البرنامج. يتضمن بناء تطبيقات الويب الآن بناء البنية التحتية ، وبناء البرامج ، وإدارة نشر التطبيق وتشغيله بما في ذلك التعامل مع أي مشكلات تتعلق بالتوسيع قد تنجم عن زيادة عدد المستخدمين. كل هذه مشكلات لم يتم أخذها في الاعتبار عند إنشاء تطبيقات سطح المكتب التقليدية.
-2. **Security and Privacy**: بيانات المستخدم والأمان هي الآن مسؤولية مالك تطبيق الويب. نظرًا لأن التطبيق سيتطلب اتصالاً بالإنترنت ، فإن هذا من شأنه أن يؤدي إلى طبقة إضافية من المخاطر التي يحتاج المالك إلى مراعاتها وإدارتها.
-3. **Requires an Internet Connection**: سواء أكان تطبيقًا بسيطًا أو تطبيق شبكة معقدًا ، فستتطلب تطبيقات الويب دائمًا من المستخدم أن يكون لديه اتصال بالإنترنت. هذه بالتأكيد ليست مشكلة كبيرة في هذا العصر ، ومع ذلك ، فهذا يعني أنه لا يمكن استخدام تطبيق الويب في المواقف التي لا يتوفر فيها الإنترنت.
-4. **Rapid Improvement in tools and Capabilities: هذا هو في الواقع منفعة والتزام. تخضع الأدوات المستخدمة لبناء تطبيقات الويب لتحسين سريع مع ظهور تقنيات جديدة كل يوم. في حين أن هذا يعني أن تطبيقات الويب ستتمتع بإمكانيات جديدة ، فهذا يعني أيضًا أن مالك تطبيق الويب يحتاج إلى التحسين والتعلم بسرعة حيث يمكن بسهولة حذف معرفته التنموية الحالية في غضون فترة زمنية قصيرة.
+1. **تعقيد البنية التحتية**:لم يعد تطوير التطبيقات مجرد مسألة بناء البرنامج. يتضمن بناء تطبيقات الويب الآن بناء البنية التحتية ، وبناء البرامج ، وإدارة نشر التطبيق وتشغيله بما في ذلك التعامل مع أي مشكلات تتعلق بالتوسيع قد تنجم عن زيادة عدد المستخدمين. كل هذه مشكلات لم يتم أخذها في الاعتبار عند إنشاء تطبيقات سطح المكتب التقليدية.
+2. **الأمن والخصوصية**: بيانات المستخدم والأمان هي الآن مسؤولية مالك تطبيق الويب. نظرًا لأن التطبيق سيتطلب اتصالاً بالإنترنت ، فإن هذا من شأنه أن يؤدي إلى طبقة إضافية من المخاطر التي يحتاج المالك إلى مراعاتها وإدارتها.
+3. **يتطلب اتصالاً بالإنترنت**: سواء أكان تطبيقًا بسيطًا أو تطبيق شبكة معقدًا ، فستتطلب تطبيقات الويب دائمًا من المستخدم أن يكون لديه اتصال بالإنترنت. هذه بالتأكيد ليست مشكلة كبيرة في هذا العصر ، ومع ذلك ، فهذا يعني أنه لا يمكن استخدام تطبيق الويب في المواقف التي لا يتوفر فيها الإنترنت.
+4. **تحسن سريع في الأدوات والقدرات**: هذا هو في الواقع منفعة والتزام. تخضع الأدوات المستخدمة لبناء تطبيقات الويب لتحسين سريع مع ظهور تقنيات جديدة كل يوم. في حين أن هذا يعني أن تطبيقات الويب ستتمتع بإمكانيات جديدة ، فهذا يعني أيضًا أن مالك تطبيق الويب يحتاج إلى التحسين والتعلم بسرعة حيث يمكن بسهولة حذف معرفته التنموية الحالية في غضون فترة زمنية قصيرة.
 
-## Web Application History
+## تاريخ تطبيقات الويب
 
 تطورت تطبيقات الويب على مر السنين لتأخذ أشكالًا مختلفة. هذا التاريخ المختصر وسيوضح الفرق بين صفحة الويب و تطبيق الويب.
 
-### Web Page
+### صفحة الإنترنت
 
-In the early days of the internet and when the web browsers were invented, we had web pages. Web pages contained static content (does not change as the user changes). The main innovation was hyper text, which allowed linking of related documents. In these days, the internet was not commercialized and web sites were used to dissimenate information. Content was produced using website owners. But the main protocols used to transfer web page information (HTTP) and display web page (HTML) was developed during this era. Browsers would send an HTTP request to open a page, and the web server would respond with an HTTP response containing the HTML and images needed to construct the page on the browser. Information was only pushed from the web servers to the web browser, there was no information exchange.
+في الأيام الأولى للإنترنت وعندما تم اختراع متصفحات الويب ، كان لدينا صفحات ويب. تحتوي صفحات الويب على محتوى ثابت (لا يتغير مع تغير المستخدم). كان الابتكار الرئيسي هو النص الفائق ، والذي سمح بربط المستندات ذات الصلة. في هذه الأيام ، لم يتم تسويق الإنترنت واستُخدمت مواقع الويب لتشتيت المعلومات. تم إنتاج المحتوى باستخدام أصحاب مواقع الويب. لكن البروتوكولات الرئيسية المستخدمة لنقل معلومات صفحة الويب (HTTP) وعرض صفحة الويب (HTML) تم تطويرها خلال هذه الحقبة. سترسل المتصفحات طلب HTTP لفتح صفحة ، وسيستجيب خادم الويب باستجابة HTTP تحتوي على HTML والصور اللازمة لإنشاء الصفحة على المتصفح. تم دفع المعلومات فقط من خوادم الويب إلى متصفح الويب ، ولم يكن هناك تبادل للمعلومات.
 
 ```mermaid
 sequenceDiagram
@@ -49,9 +49,9 @@ sequenceDiagram
     S->>C: HTTP Response for page /
 ```
 
-### Early Web Applications
+### تطبيقات الويب المبكرة
 
-HTTP then added other actions to the protocol and now browsers can send files and information to webserver using POST and PUT actions. HTML also got the FORM tag which allows user to enter data to send to the webserver. HTTP is still based on request and response cycle, but now communication is both ways. The innovation paved the way for conducting transactions using web browsers and the commercialization of the internet started along with eCommerce websites. Now websites can forward the information received from browsers to application servers that generate HTML pages on the fly, with websites still serving static files like images to the browsers. This allowed for dynamic pages where a each user would see different information on the same URL. These dynamic web pages are what is now known as web applications. Content in this era was mostly generated by website owners.
+ثم أضاف HTTP إجراءات أخرى إلى البروتوكول ويمكن للمتصفحات الآن إرسال الملفات والمعلومات إلى خادم الويب باستخدام إجراءات POST و PUT. حصلت HTML أيضًا على علامة FORM التي تسمح للمستخدم بإدخال البيانات لإرسالها إلى خادم الويب. لا يزال HTTP يعتمد على دورة الطلب والاستجابة ، ولكن الاتصال الآن هو كلا الاتجاهين. مهد الابتكار الطريق لإجراء المعاملات باستخدام متصفحات الويب وبدأ تسويق الإنترنت جنبًا إلى جنب مع مواقع التجارة الإلكترونية. الآن يمكن لمواقع الويب إعادة توجيه المعلومات الواردة من المتصفحات إلى خوادم التطبيقات التي تنشئ صفحات HTML أثناء التنقل ، مع استمرار مواقع الويب في تقديم ملفات ثابتة مثل الصور إلى المتصفحات. سمح هذا للصفحات الديناميكية حيث يرى كل مستخدم معلومات مختلفة على نفس عنوان URL. صفحات الويب الديناميكية هذه هي ما يُعرف الآن بتطبيقات الويب. تم إنشاء المحتوى في هذا العصر في الغالب بواسطة مالكي مواقع الويب.
 
 ```mermaid
 sequenceDiagram
@@ -64,9 +64,9 @@ sequenceDiagram
     A->>S: generated HTML FOR logged-in user page 
     S->>C: HTTP Response with generated HTML for page /user
 ```
-### Web 2.0 Applications
+### تطبيقات الويب 2.0
 
-All that changed in the Web2.0 era is that web applications were leveraged to involve the user in generating the content for web applications. Wikipedia, twitter, facebook ..etc. All these platforms did not have content but relied on the network of users to generate content and value. The web application though was still the same utilizing an application server that performed the actions and web server serving only static files. However, the scale is now much bigger and the infrastructure is no much more complex to be able to handle the increase in number of users and content traveling both ways. A webapplication such as facebook's would have a cluster of webserver and another for application servers, and a third for databases all working together to to serve as the infrastructure for the facebook platform. With this increase in users, now emerged the need to make the websites more responsive and less demanding, which was the empitus for the next stage in the evolution of web applications. 
+كل ما تغير في عصر Web2.0 هو أنه تم الاستفادة من تطبيقات الويب لإشراك المستخدم في إنشاء المحتوى لتطبيقات الويب. ويكيبيديا وتويتر وفيسبوك .. إلخ. كل هذه المنصات لم يكن لديها محتوى لكنها اعتمدت على شبكة المستخدمين لتوليد المحتوى والقيمة. على الرغم من أن تطبيق الويب كان لا يزال هو نفسه باستخدام خادم التطبيق الذي يقوم بتنفيذ الإجراءات وخادم الويب الذي يخدم الملفات الثابتة فقط. ومع ذلك ، فإن الحجم الآن أكبر بكثير والبنية التحتية ليست أكثر تعقيدًا بكثير لتتمكن من التعامل مع الزيادة في عدد المستخدمين والمحتوى الذي ينتقل في كلا الاتجاهين. سيكون لتطبيق الويب مثل Facebook مجموعة من خادم الويب وآخر لخوادم التطبيقات ، وثالث لقواعد البيانات التي تعمل جميعها معًا لتكون بمثابة البنية التحتية لمنصة facebook. مع هذه الزيادة في عدد المستخدمين ، ظهرت الآن الحاجة إلى جعل مواقع الويب أكثر استجابة وأقل تطلبًا ، والتي كانت بمثابة القوة الدافعة للمرحلة التالية في تطور تطبيقات الويب.
 
 
 ```mermaid
@@ -81,9 +81,9 @@ sequenceDiagram
     S->>C: HTTP Response with generated HTML for page /user
 ```
 
-### HTML5 Web Applications (Dynamic, Frontend Applications)
+### تطبيقات الويب HTML5 (ديناميكية ، تطبيقات الواجهة الأمامية)
 
-The biggest change in this era of dynamic webpages is the idea that a page does not have to be fully reconstructed after every request is sent to the webserver. Why not serve a page skeleton when the user first open a webapplication, then subsequent requests to the server can be for small bits of information which the browser would know how to include in the page. Which is why javascript was included in browsers specifically to allow for developers to implement HTML pages that can change dynamically. The page is still static HTML and CSS, but the javascript allowed it to change. These technologies evolved into what is known today as HTML5 web applications. The focus of this era is on user experience. TNow the browser and webserver cooperated to present the user with an improved web application experience that felt like desktop applciations. Web development was now split into frontend development for designers that focus on the browser, and backend development for engineers that focus on the infrastructure and data.
+أكبر تغيير في عصر صفحات الويب الديناميكية هو فكرة أنه لا يلزم إعادة بناء الصفحة بالكامل بعد إرسال كل طلب إلى خادم الويب. لماذا لا تخدم هيكلًا للصفحة عندما يفتح المستخدم تطبيق ويب لأول مرة ، فإن الطلبات اللاحقة إلى الخادم يمكن أن تكون لأجزاء صغيرة من المعلومات التي يعرف المتصفح كيفية تضمينها في الصفحة. وهذا هو سبب تضمين جافا سكريبت في المتصفحات على وجه التحديد للسماح للمطورين بتنفيذ صفحات HTML التي يمكن أن تتغير ديناميكيًا. لا تزال الصفحة ثابتة بتنسيق HTML و CSS ، لكن جافا سكريبت سمحت لها بالتغيير. تطورت هذه التقنيات إلى ما يعرف اليوم بتطبيقات الويب HTML5. ينصب تركيز هذا العصر على تجربة المستخدم. TNow تعاون المستعرض وخادم الويب لتقديم تجربة تطبيق ويب محسّنة للمستخدم تبدو وكأنها تطبيقات سطح مكتب. تم تقسيم تطوير الويب الآن إلى تطوير الواجهة الأمامية للمصممين الذين يركزون على المتصفح ، وتطوير الواجهة الخلفية للمهندسين الذين يركزون على البنية التحتية والبيانات.
 
 ```mermaid
 sequenceDiagram
@@ -104,42 +104,41 @@ sequenceDiagram
     C-->C: Browserver incorporates data into website dynamically
 ```
 
-### The Web Application Infrastructure
+### البنية التحتية لتطبيق الويب
 
-|   |  Web Page | Web Applcation  |  Web 2.0 Application | HTML5 Application  |
-|---|---|---|---|---|
-| Browser  | Standard HTML browsers | Standard HTML Browsers  | Standard HTML browser  | Modern Browsers with HTML5 capabilities  |
-| Web Server  | Serves HTML, images, and files  | Serves HTML, images, and files.</br>Forwards data to application server | Serves HTML, images, and files.</br>Forwards data to application server  | Serves HTML, images, and files.</br>Forwards data to application server | Serves HTML, images, and files.</br>Forwards data to application server</br>Cloud hosted components becoming more prominent |
-| Application Server | N/A  | Needed for Business Logic  | Needed for Business Logic  | Optional, since logic can be implemented in the browser now |
-| Content | Static | Dynamic  | Dynamic  | Dynamic  |
-| Page Rendering | New page with every Request/Response Cycle  | New page with every Request/Response Cycle | New page with every Request/Response Cycle | Part of the page updated only  |
-| Request/Response Cycle | Fetching files and static HTML only | Data exchange and page rendering   |  Data exchange and page rendering |  Data exchange and page rendering |
+|   |  صفحة ويب | تطبيقات الويب | تطبيق الويب 2.0 | تطبيق HTML5 |
+| --- | --- | --- | --- | --- |
+| المستعرض | متصفحات HTML القياسية | متصفحات HTML القياسية | مستعرض HTML قياسي | المتصفحات الحديثة بقدرات HTML5 |
+| خادم الويب | يخدم HTML والصور والملفات | يخدم HTML والصور والملفات. </br> يعيد توجيه البيانات إلى خادم التطبيق | يخدم HTML والصور والملفات. </br> يعيد توجيه البيانات إلى خادم التطبيق | يخدم HTML والصور والملفات. </br> يعيد توجيه البيانات إلى خادم التطبيق | يخدم HTML والصور والملفات. </br> يعيد توجيه البيانات إلى خادم التطبيق </br> تصبح المكونات المستضافة على السحابة أكثر بروزًا |
+| خادم التطبيق | غير متاح | مطلوب لمنطق الأعمال | مطلوب لمنطق الأعمال | اختياري ، حيث يمكن تنفيذ المنطق في المتصفح الآن |
+| المحتوى | ثابت | ديناميكي | ديناميكي | ديناميكي |
+| عرض الصفحة | صفحة جديدة مع كل دورة طلب / استجابة | صفحة جديدة مع كل دورة طلب / استجابة | صفحة جديدة مع كل دورة طلب / استجابة | تم تحديث جزء من الصفحة فقط |
+| دورة الطلب / الاستجابة | إحضار الملفات و HTML الثابت فقط | تبادل البيانات وعرض الصفحة | تبادل البيانات وعرض الصفحة | تبادل البيانات وعرض الصفحة |
 
 
-### The Infrastructure in the Cloud Era
+### البنية التحتية في عصر السحابة
 
-While the components of the infrastructure are the same, the biggest change in the cloud era is that many of the infrastructure components are now cloud based. Meaning, some might be SaaS services offered by companies that focus on a specific component of the infrastructure. So for example, a web application might have its database managed by amazon, webserver by digital ocean, CDN by cloudflare. Other services might be added to the infrastructure like authenticaion or geospatial database that are managed by other providers. The owner of the web application manages a **mashup** of these services and bundles them into a usable application.
+في حين أن مكونات البنية التحتية هي نفسها ، فإن التغيير الأكبر في عصر السحابة هو أن العديد من مكونات البنية التحتية تعتمد الآن على السحابة. بمعنى ، قد يكون بعضها عبارة عن خدمات SaaS تقدمها الشركات التي تركز على مكون معين من البنية التحتية. على سبيل المثال ، قد تتم إدارة قاعدة بيانات تطبيق الويب بواسطة amazon ، وخادم الويب عن طريق المحيط الرقمي ، و CDN بواسطة cloudflare. قد يتم إضافة خدمات أخرى إلى البنية التحتية مثل المصادقة أو قاعدة البيانات الجغرافية المكانية التي يديرها مزودون آخرون. يدير مالك تطبيق الويب ** mashup ** من هذه الخدمات ويجمعها في تطبيق قابل للاستخدام.
 
-### The Application Server
+### خادم التطبيق
 
-The application server is a server that accepts requests forwarded from the webserver and is able to generate an appropriate HTTP response. The application server utilizes programming languages to process requests and can construct a unique HTML body on the fly. The type of programs written for the applciation server typically involve writing functions that take HTTP requests as inputs and generate HTTP responses containing HTML or other forms of content in the body of the response. Languages used for building applciation servers include Java, Python, C#, Ruby, Scala, Go, Javascript, and numerous other languages. It is the logic writen in these servers that is considered the logic of the web application. Such servers would be responsible for managing authentication, cart management, transaction management. The applicaiton server are not designed to handle serving static files and images, and might include these features for testing purposes only. As a result, when building a web application, a test application server needs to run before you can see the results on your browser. If the server is not running, you cannot test the application that is built.
+خادم التطبيق هو خادم يقبل الطلبات المعاد توجيهها من خادم الويب وهو قادر على إنشاء استجابة HTTP مناسبة. يستخدم خادم التطبيق لغات البرمجة لمعالجة الطلبات ويمكنه إنشاء جسم HTML فريد أثناء التنقل. عادةً ما يشتمل نوع البرامج المكتوبة لخادم التطبيق على وظائف كتابة تأخذ طلبات HTTP كمدخلات وتولد استجابات HTTP تحتوي على HTML أو أشكال أخرى من المحتوى في نص الاستجابة. تشمل اللغات المستخدمة لبناء خوادم التطبيقات Java و Python و C # و Ruby و Scala و Go و Javascript والعديد من اللغات الأخرى. يعتبر المنطق المكتوب في هذه الخوادم هو منطق تطبيق الويب. ستكون هذه الخوادم مسؤولة عن إدارة المصادقة وإدارة عربة التسوق وإدارة المعاملات. لم يتم تصميم خادم التطبيق للتعامل مع الملفات والصور الثابتة ، وقد يتضمن هذه الميزات لأغراض الاختبار فقط. نتيجة لذلك ، عند إنشاء تطبيق ويب ، يجب تشغيل خادم تطبيق تجريبي قبل أن تتمكن من رؤية النتائج على متصفحك. إذا لم يكن الخادم قيد التشغيل ، فلا يمكنك اختبار التطبيق الذي تم إنشاؤه.
 
-### The Request Response Cycle
+### دورة استجابة الطلب
 
-Serving an HTML page or web application always starts with the browser. The user must type the correct URL. The URL looks something like the following:
+تبدأ خدمة صفحة HTML أو تطبيق الويب دائمًا بالمتصفح. يجب على المستخدم كتابة عنوان URL الصحيح. يبدو عنوان URL مشابهًا لما يلي:
 
     http://www.twitter.com/signup
 
-**http://** is the protocol part. Its how the user tells the browser which protocol to use to communicate with the server. Other common protocols that browsers can use are **https://** for secure communication with web server and **ftp://** for communication with file servers.
+**http://** هو جزء البروتوكول. إنها الطريقة التي يخبر بها المستخدم المتصفح عن البروتوكول الذي يجب استخدامه للتواصل مع الخادم. البروتوكولات الشائعة الأخرى التي يمكن للمتصفحات استخدامها هي **https://** للتواصل الآمن مع خادم الويب و **ftp://** للتواصل مع خوادم الملفات.
 
-**www.twitter.com** is the hostname part. The **twitter.com** part from the hostname is known as the domain. The hostname is an alias for the IP address of the server. It gets translated by DNS services to an IP address which the browser uses to determine which server on the internet to communicate with.
+**www.twitter.com** هو جزء اسم المضيف. ال **twitter.com** يُعرف جزء من اسم المضيف باسم المجال. اسم المضيف هو اسم مستعار لعنوان IP الخاص بالخادم. يتم ترجمته بواسطة خدمات DNS إلى عنوان IP يستخدمه المتصفح لتحديد الخادم على الإنترنت للاتصال به.
 
-**/signup** is known as the path. This determines what file or service we would like the web application or server to provide. The **/** is known as the root path. Typically is provides the browser with the main page that the user will see when visiting a website. Then, every function, file, image, or service on the website or web application will have its own unique path. When building web applications, the servies must be associated with a unique path, otherwise the users will not have access to the service.
+**/signup** يُعرف باسم المسار. يحدد هذا الملف أو الخدمة التي نود أن يوفرها تطبيق الويب أو الخادم. يُعرف ** / ** بمسار الجذر. عادةً ما يتم تزويد المتصفح بالصفحة الرئيسية التي سيراها المستخدم عند زيارة أحد مواقع الويب. بعد ذلك ، سيكون لكل وظيفة أو ملف أو صورة أو خدمة على موقع الويب أو تطبيق الويب مسار فريد خاص بها. عند إنشاء تطبيقات الويب ، يجب ربط الخدمات بمسار فريد ، وإلا فلن يتمكن المستخدمون من الوصول إلى الخدمة.
 
-After typing the URL in the browser, first the browser will try to find the IP address of the webserver based on the provided hostname by communicating with DNS services. Once the IP is obtained, the browser will initiate communication using the requested protocol, typically, this will be HTTP.
+بعد كتابة عنوان URL في المتصفح ، سيحاول المستعرض أولاً العثور على عنوان IP لخادم الويب بناءً على اسم المضيف المقدم من خلال الاتصال بخدمات DNS. بمجرد الحصول على IP ، سيبدأ المستعرض الاتصال باستخدام البروتوكول المطلوب ، عادةً ما يكون HTTP.
 
-Communication is always initiated by browsers, also known as clients. Web applications are considerd a form of client/server application with the browser being the client and the web server being the server. When communication is established, the browser sends a text based request, known as the HTTP request, containing the information needed by the server to provide the requested service. The HTTP request looks something like this:
-
+يتم دائمًا بدء الاتصال بواسطة المتصفحات ، المعروفة أيضًا باسم العملاء. تعتبر تطبيقات الويب شكلاً من أشكال تطبيق العميل / الخادم مع كون المتصفح هو العميل وخادم الويب هو الخادم. عندما يتم إنشاء الاتصال ، يرسل المتصفح طلبًا يستند إلى النص ، يُعرف باسم طلب HTTP ، يحتوي على المعلومات التي يحتاجها الخادم لتوفير الخدمة المطلوبة. يبدو طلب HTTP شيئًا كالتالي:
 ```
 GET /hello.htm HTTP/1.1
 User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)
@@ -149,9 +148,9 @@ Accept-Encoding: gzip, deflate
 Connection: Keep-Alive
 ```
 
-Here the client is telling the server that is wants to **GET** the file **/hello.html** using the **HTTP 1.1** communication protocol. The host part identifies the hostname that the client is trying to communicate with. All other lines are information about the client so the server knows how to provide the correct data to the client. This request is known as a GET request and is used to receive files, images, and HTML pages.
+هنا يخبر العميل الخادم بأنه يريد **Get ** الملف ** / hello.html ** باستخدام بروتوكول الاتصال ** HTTP 1.1 **. يحدد جزء المضيف اسم المضيف الذي يحاول العميل الاتصال به. جميع الأسطر الأخرى عبارة عن معلومات حول العميل حتى يعرف الخادم كيفية توفير البيانات الصحيحة للعميل. يُعرف هذا الطلب باسم طلب GET ويستخدم لتلقي الملفات والصور وصفحات HTML.
 
-The server would respond with a standard HTTP response that might look like this:
+سيستجيب الخادم باستجابة HTTP قياسية قد تبدو كالتالي:
 ```
 HTTP/1.1 200 OK
 Date: Mon, 27 Jul 2009 12:28:53 GMT
@@ -168,10 +167,9 @@ Connection: Closed
 </html>
 ```
 
-The first line provides confirmation that the server successfully found the requested data and will be serving it. The lines that follow all provide information on the response. The response also include a body which contains the requested data. The body starts from the line containing **\<html\>** and goes to the end of the response. The body part of the HTML page that is to be shown to the user.
+يوفر السطر الأول تأكيدًا على أن الخادم نجح في العثور على البيانات المطلوبة وسيقوم بخدمتها. توفر الأسطر التالية معلومات حول الاستجابة. تتضمن الاستجابة أيضًا هيئة تحتوي على البيانات المطلوبة. يبدأ النص من السطر الذي يحتوي على ** \ <html \> ** وينتقل إلى نهاية الرد. الجزء الأساسي من صفحة HTML الذي سيتم عرضه للمستخدم.
 
-POST requests are slightly different from GET requests in that they typically also include a body, as the goal from the POST request is to send data to the webserver. The POST request can look something like the following:
-
+تختلف طلبات POST اختلافًا طفيفًا عن طلبات GET من حيث أنها تشتمل أيضًا على نص ، حيث أن الهدف من طلب POST هو إرسال البيانات إلى خادم الويب. يمكن أن يبدو طلب POST مشابهًا لما يلي:
 ```
 POST /cgi-bin/process.cgi HTTP/1.1
 User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)
@@ -185,17 +183,16 @@ Connection: Keep-Alive
 licenseID=string&content=string&/paramsXML=string
 ```
 
-It is very similar to the GET request, except it has the body which is the line starting with licenseID. This line includes information that is URL Encoded that will be delivered to the server. Typical examples of using POST requests is to send username and password combinations or the context of a tweet or blog post. It all depends on the web applciation and its the responsibility of the developer to write the function that extracts the data from the request and performs the proper action with it, like storing it in a database or rendering the HTML page.
+إنه مشابه جدًا لطلب GET ، إلا أنه يحتوي على الجسم وهو السطر الذي يبدأ بمعرّف الترخيص. يتضمن هذا السطر المعلومات التي تم ترميزها بعنوان URL والتي سيتم تسليمها إلى الخادم. الأمثلة النموذجية لاستخدام طلبات POST هي إرسال مجموعات اسم المستخدم وكلمة المرور أو سياق تغريدة أو منشور مدونة. كل هذا يتوقف على تطبيق الويب ومسؤولية المطور لكتابة الوظيفة التي تستخرج البيانات من الطلب وتنفذ الإجراء المناسب معها ، مثل تخزينها في قاعدة بيانات أو عرض صفحة HTML.
 
-This is a simple introduction to HTTP protocol, for more detailed description of the protocol please [read this post](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages). Understanding how HTTP works is key to understanding the security issues associated with web applications and to understand how to manage and scale web applications.
+هذه مقدمة بسيطة لبروتوكول HTTP ، للحصول على وصف أكثر تفصيلاً للبروتوكول يرجى [قراءة هذا المنشور](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages). يعد فهم كيفية عمل HTTP أمرًا أساسيًا لفهم مشكلات الأمان المرتبطة بتطبيقات الويب وفهم كيفية إدارة تطبيقات الويب وتوسيع نطاقها.
 
-### The Protocols
-
-- **HTTP:** Hyper Text Transerver Protocol. This is a clear text based protocol where client and server communicate using readable text.
-- **HTTPS:** Similar to HTTP, but the text is encrypted.
-- **SSL/TLS:** Two of the main protocols used for encrypting HTTPS communication text. SSL stands for Secure Socket Layer and is the predecessor to TLS. Now most websites use TLS, which stands for Transport Layer Security. 
-- **HTML:** Hypter Text Markup Language. It is a language that is used to give a text document structure and also used to change text formatting, just like a word document. HTML documents are text base and look something like the following:
-```
+### البروتوكولات
+- ** HTTP: ** Hyper Text Transerver Protocol. هذا بروتوكول مستند إلى نص واضح حيث يتواصل العميل والخادم باستخدام نص يمكن قراءته.
+- ** HTTPS: ** مشابه لـ HTTP ، لكن النص مشفر.
+- ** SSL / TLS: ** اثنان من البروتوكولات الرئيسية المستخدمة لتشفير نص اتصال HTTPS. يرمز SSL إلى Secure Socket Layer وهو سلف TLS. تستخدم معظم مواقع الويب الآن TLS ، والتي تعني أمان طبقة النقل.
+- ** HTML: ** Hypter Text Markup Language. إنها لغة تُستخدم لإعطاء بنية مستند نصي وتستخدم أيضًا لتغيير تنسيق النص ، تمامًا مثل مستند Word. مستندات HTML هي قاعدة نصية وتبدو كما يلي:
+""
  <!DOCTYPE html>
 <html>
 <body>
@@ -207,19 +204,19 @@ This is a simple introduction to HTTP protocol, for more detailed description of
 </html> 
 ```
 
-You can see the HTML document is readable. If it is opened by the browser it will look something like this:
+يمكنك أن ترى أن مستند HTML قابل للقراءة. إذا تم فتحه بواسطة المتصفح ، فسيبدو مثل هذا:
 
-{{< figure src="courses/350/html.png" caption="HTML Page Example" >}}
-- **CSS:** Cascading Style Sheets. It is the way in which to control the styles, colors, fonts and how the text looks in HTML pages. Best practice is to use HTML to design the structure of the page, then setting the formatting and colors of the page using CSS.
+{{<figure src = "courses / 350 / html.png" caption = "مثال على صفحة HTML">}}
+- ** CSS: ** أوراق الأنماط المتتالية. إنها الطريقة التي يتم بها التحكم في الأنماط والألوان والخطوط وكيف يبدو النص في صفحات HTML. أفضل ممارسة هي استخدام HTML لتصميم بنية الصفحة ، ثم تعيين تنسيق الصفحة وألوانها باستخدام CSS.
 
-To further experiment and learn about HTML you can use this [HTML scratch pad](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_document) to experement with writing HTML. Use this [HTML tutorial](https://www.w3schools.com/html/) to learn what tags you can use.
+لمزيد من التجربة والتعرف على HTML ، يمكنك استخدام [لوحة HTML المؤقتة] (https://www.w3schools.com/html/tryit.asp؟filename=tryhtml_basic_document) للتجربة مع كتابة HTML. استخدم هذا [برنامج HTML التعليمي] (https://www.w3schools.com/html/) للتعرف على العلامات التي يمكنك استخدامها.
 
 
-### Where Does Django Fit In?
+### أين تناسب Django؟
 
-Django is a python based web application framework. It allows the user to easily handle HTTP requests and produce correct HTTP responses. However, instead of working with HTTP text, it hides all of this from the developer and allows the developer to work as if they are building any other Python based application. The framework puts some restrictions on the developer, for example, it forces the developer to organize project files in a certain way and use specific files for functions that handle HTTP request/response cyles and other files for database management. As a result, upon successfully adhering to these restrictions, the developer gets many services and benefits for free. For example, improved security, easy encryption, admin interface to manage data, clean URL paths, easy templating and many many more.
+Django هو إطار تطبيق ويب قائم على Python. يتيح للمستخدم التعامل بسهولة مع طلبات HTTP وإنتاج استجابات HTTP صحيحة. ومع ذلك ، بدلاً من العمل مع نص HTTP ، فإنه يخفي كل هذا عن المطور ويسمح للمطور بالعمل كما لو كان يقوم ببناء أي تطبيق آخر قائم على Python. يضع إطار العمل بعض القيود على المطور ، على سبيل المثال ، يفرض على المطور تنظيم ملفات المشروع بطريقة معينة واستخدام ملفات محددة للوظائف التي تتعامل مع طلبات HTTP / استجابة cyles وملفات أخرى لإدارة قاعدة البيانات. نتيجة لذلك ، عند الالتزام بنجاح بهذه القيود ، يحصل المطور على العديد من الخدمات والفوائد مجانًا. على سبيل المثال ، تحسين الأمان ، والتشفير السهل ، وواجهة المسؤول لإدارة البيانات ، ومسارات URL النظيفة ، والقوالب السهلة ، وغيرها الكثير.
 
-In this course will only touch upon some of the features of Django. Using Django can be as complicated or simple as a developer needs. It can be the means to quickly build web application prototypes or engineer a complex solution that can serve large scal websites like twitter, facebook, or snapchat. Some well known services on the internet were built using Python, including:
+في هذه الدورة سوف أتطرق فقط إلى بعض ميزات Django. يمكن أن يكون استخدام Django معقدًا أو بسيطًا بقدر ما يحتاجه المطور. يمكن أن تكون وسيلة لبناء نماذج أولية لتطبيقات الويب بسرعة أو هندسة حل معقد يمكنه خدمة مواقع الويب ذات الحجم الكبير مثل Twitter أو facebook أو snapchat. تم إنشاء بعض الخدمات المعروفة على الإنترنت باستخدام Python ، بما في ذلك:
 - Instagram
 - Uber
 - Pintrest
@@ -228,4 +225,4 @@ In this course will only touch upon some of the features of Django. Using Django
 - Reddit
 - and many more
 
-However, keep in mind that as the site grows and more engineers are hired to work on it, other technologies are utilized to manage the infrastructure. Therefore, we cannot say that these websites are build using only Django or Python. But they evovled to include other technologies and languages each serving a specific purpose. Ideas are typically initially implemented with a single technology however. Should they evolve to incorporate other technologies is likely a sign that the service is successful and is growing.
+ومع ذلك ، ضع في اعتبارك أنه مع نمو الموقع وتوظيف المزيد من المهندسين للعمل عليه ، يتم استخدام تقنيات أخرى لإدارة البنية التحتية. لذلك ، لا يمكننا القول أن هذه المواقع يتم إنشاؤها باستخدام Django أو Python فقط. لكنهم تطوروا ليشملوا تقنيات ولغات أخرى يخدم كل منها غرضًا محددًا. عادة ما يتم تنفيذ الأفكار مبدئيًا باستخدام تقنية واحدة. إذا تطورت لتدمج تقنيات أخرى فمن المحتمل أن تكون علامة على أن الخدمة ناجحة ومتنامية.

@@ -49,7 +49,7 @@ from .models import Post
 class PostAdmin(admin.ModelAdmin):
   pass
 
-admin.site.register(Post, PostAdmin) # Notice this line changed
+admin.site.register(Post, PostAdmin) # لاحظ تغير هذا السطر
 ```
 
 لاحظ كيف عرفنا `class PostAdmin(admin.ModelAdmin)` الفارغة, 
@@ -66,7 +66,7 @@ from django.contrib import admin
 from .models import Post
 
 class PostAdmin(admin.ModelAdmin):
-    list_display = ('title', 'slug', 'status','created_on') # This line was added
+    list_display = ('title', 'slug', 'status','created_on') # تم إضافة هذا السطر
 
 admin.site.register(Post, PostAdmin)
 ```
@@ -83,7 +83,7 @@ from .models import Post
 
 class PostAdmin(admin.ModelAdmin):
     list_display = ('title', 'slug', 'status','created_on')
-    list_filter = ("status",) # This line was added
+    list_filter = ("status",) # تم إضافة هذا السطر
 
 
 admin.site.register(Post, PostAdmin)
@@ -105,7 +105,7 @@ from .models import Post
 
 class PostAdmin(admin.ModelAdmin):
     list_display = ('title', 'slug', 'status','created_on')
-    list_filter = ("status",) # This line was added
+    list_filter = ("status",) # تم إضافة هذا السطر
     search_fields = ['title', 'content']
 
 admin.site.register(Post, PostAdmin)
@@ -122,7 +122,7 @@ from .models import Post
 
 class PostAdmin(admin.ModelAdmin):
     list_display = ('title', 'slug', 'status','created_on')
-    list_filter = ("status",) # This line was added
+    list_filter = ("status",) # تم إضافة هذا السطر
     search_fields = ['title', 'content']
     prepopulated_fields = {'slug': ('title',)}
 admin.site.register(Post, PostAdmin)

@@ -117,46 +117,70 @@ graph TD
 {{< icon name="code" pack="fas" >}} معرفة الخطوات التي نفذت على Replit.com
 {{% /callout %}}
 
-1. {{< icon name="github" pack="fab" >}} **Find a task or fix to work on:** It is the responsibility of the project manager to ensure that developers can find tasks to work on. These can be found listed on GitHub issues, the ticketing system used for the project, speaking to the project manager, or reading the requirements document. For this course, project managers should write down tasks as issues in GitHub. Developers can also assist by writing issues that can either bew feature suggestions or descriptions of bugs that need to be fixed. We will discuss project management in more detail in [the next section]({{< ref "proj-mgt.md" >}}).
-2. {{< icon name="code" pack="fas" >}} **Import your project from GitHub** as shown in the figure. It is also fine to import the same project again every time you want to start new work to ensure you get a fresh copy of the code.
+
+1. {{< icon name="github" pack="fab" >}} 
+
+**ايجاد مهمة أو تعديل للعمل عليه**: من مسؤوليات مدير المشروع التأكد من ان المطورين قادرين على ايجاد مهمات للعمل عليها, يمكن ايجادهم في قائمة المشكلات في Github, نظام التذاكر المستخدم في المشروع, التحدث مع مدير المشروع, أو قراءة مستند المتطلبات. لهذا المقرر, مدير المشروع يجب عليه كتابة المهمات على شكل مشكلات في Github. المطورين يمكنهم المساعدة ايضًا عن طريق اقتراح خاصيات جديدة أو وصف الأخطاء التي تحتاج لتصليح, سنناقش إدارة المشروع بتفصيل اكثر  [في القسم التالي]({{< ref "proj-mgt.md" >}}).
+
+2. {{< icon name="code" pack="fas" >}} 
+** استيراد مشروعك من Github**. كما هو موضح بالصورة. لابأس أيضًا استيراد نفس المشروع مرة أخرى في كل مرة تريد فيها بدء عمل جديد لضمان حصولك على نسخة جديدة من الكود.
 {{< figure src="courses/350/replit-import-repo.png" caption="Import Repository from GitHub" >}}
-   - **IMPORTANT: Pull updates for existing projects:** If you don;t want to import the project again and lose your work on replit, be sure to **pull** updates that were merged to the master branch by the project manager on GitHub. This will guarantee that you start your work with the latest version of the code
+
+   
+
+   - **مهم: سحب التحديثات *Pull updates* للمشاريع الحالية**: اذا كنت لا تريد استيراد المشروع مرة أخرى وفقدان عملك في Replit, تأكد من **سحب** **"Pull"** التحديثات التي تم دمجها للفرع الرئيسي عن طريق مدير المشروع في Github. هذا سيضمن انك ستبدأ عملك مع النسخة الأحدث من الكود.
+
 {{< figure src="courses/350/replit-pull-github.png" caption="Fetching Updates from GitHub" >}}
-3. {{< icon name="code" pack="fas" >}} **Create a new branch:** Branches allow a developer to change the code without fear of ruining the project. When starting on a programming task, always create a new git branch for the task from the master branch. A branch allows you to change the code for you only, and not affect the work of others. You need to always remember the following:
-   - **NEVER work directly on the master branch**. 
-   - **Create a new branch** from the master branch only.
-   - The Master branch **should always** have a working copy of the project, never a broken one.
-   - **Choose a name** for the new branch that reflects what work is done. For example bug_1234, where the number is the issue number on github. Or feature_1234. To learn about what characters are allowed in a branch name [please read this article](https://git-scm.com/docs/git-check-ref-format).
+3. {{< icon name="code" pack="fas" >}} 
+
+**انشاء فرع "Branch" جديد**: الفروع تسمح للمطور بتغيير الكود دون خوف من افساد المشروع. عند البدأ في مهمة برمجة, دائمًا قم بإنشاء فرع للعمل من الفرع الرئيسي. الفروع تسمح لك بتغير الكود لديك فقط, وعدم التأثير على عمل الآخرينز تحتاج دائمًا لتذكر التالي: 
+
+   
+   - **لا تعمل على الفرع الرئيسي "أبدًا"**.
+   - **انشأ فرع جديد** من الفرع الرئيسي فقط.
+   - الفرع الرئيسي **يجب ان يكون دائمًا** لديه نسخة عمل من المشروع, وليس نسخة ناقصة أبدًا.
+   - **اختر الإسم** للفرع الجديد والذي يعكس العمل الذي تقوم به, علآ سبيل المثال bug_1234 ، حيث يكون الرقم هو رقم الإصدار على Github. أو feature_1234. للتعرف على الاحرف المسموح بها في اسماْ الافرع  [قم بقراءة المقال من فضلك](https://git-scm.com/docs/git-check-ref-format).
 
 
 {{< figure src="courses/350/git-replit.png" caption="Creating or Switching Branches on Replit.com" >}}
 
-4. {{< icon name="code" pack="fas" >}} **Working on the task**: Ensure that the task you are working on is small and simple. If there are large and complex tasks, break them down into smaller tasks.
-5. {{< icon name="code" pack="fas" >}} **Commit the task**: Upon completion of the task, or reaching a milestone in your work, you must commit the work. This would allow you to create a snapshot of the work you did to be stored in the github history. The advantage of having a commit snapshot is that you can return to this version of the code any time. Therefore, it is recommended to commit frequently and even for small changes. Just make sure when you commit that you write a useful message for the history to know what you did in that commit. You must always commit and test your work and continue to change the code and commit until you are sure that the changes you did are acceptable and the task is complete.
+4. {{< icon name="code" pack="fas" >}} 
+**العمل على مهمة**: تأكد من أن العمل الذي تقوم به بسيط وصغيرز اذا كان هنالك عمل معقد وكبير, قم بتجزأتهم إلى مهما اصغر.
+
+5. {{< icon name="code" pack="fas" >}} 
+**تسليم العمل**: عند الانتهاء من المهمة ، أو الوصول إلى مرحلة رئيسية في عملك ، يجب عليك تسليم بالعمل. سيسمح لك هذا بإنشاء لقطة للعمل الذي قمت به ليتم تخزينه في سجل github. ميزة هذا اللقطات بأنك تستطيع العودة لهذه النسخة من الكود بأي وقت. لهذا من الأفضل القيام بالتسليم بشكل متكرر حتى للتغيرات البسيطة. فقط تأكد عند قيامك بالتسليم من ان تكتب رسالة مفيدة للزمن لمعرفة العمل الذي قمت بتسليمه. يجب عليك دائمًا تسليم واختبار عملك و المتابعة بتغيير الكود وتسليمه حتى تتأكد من أن التغيرات التي قمت بفعلها مقبولة والمهمة تمت.
+
    {{< figure src="courses/350/replit-commit.png" caption="Commit Your Work to Store It on GitHub" >}}
-6. {{< icon name="github" pack="fab" >}} **Send a pull request**: If you are sure the task is complete then use github to send a pull request. The pull request tells the project manager that the work on this branch is complete and ready to be added to the master branch. It is the responsibility of the project manager to respond to the pull request and merge it into the master branch. The pull request can be to merge two branches from the same repository, as we will mostly do in this course. This is the case for team members working on the same repo: 
+6. {{< icon name="github" pack="fab" >}} 
+**إرسال طلب سحب "Pull request"**: اذا تأكدت من ان المهمة تمت استخدم GitHub لإرسال طلب السحب. طلب السحب يخبر مدير المشروع ان العمل العمل في هذا الفرع اكتمل واصبح جاهز لإضافته للفرع الرئيسي. من مسؤولية المدير الاستجابة لطلب السحب ودمجة مع الفرع الرئيسي. طلب السحب يمكن لدمج فرعين من نفس المستودع, كما سنفعل في الغالب في هذه الدورة. وهذا هو الحال بالنسبة لأعضاء الفريق الذين يعملون على نفس الريبو: 
 
 {{< figure src="courses/350/pr-simple.png" caption="Creating a Simple Pull Request to Merge Branch nn Current Repo" >}}
 
-It can also be used to request merging branches between forked repositories and allow you to send your work to a project that you are not a member of:
+يمكن استخدامه أيضًا لطلب دمج الفروع بين مستودعات تشعبة "Forked" والسماح لك بإرسال عملك إلى مشروع لست عضوًا فيه:
 
 {{< figure src="courses/350/pr-forks.png" caption="Creating a Pull Request To Merge Branch From Forked Repo" >}}
 
-Once a pull request is created the project manager and team members can discuss this pull request and see what is done so far by the project manager regarding the matter.
+
+ما أن يتم انشاء طلب سحب, مدير المشروع وأعضاء الفريق يمكنهم مناقشة طلب السحب هذا ورؤية ما تم عمله حتى الآن بواسطة مدير المشروع بخصوص هذه المسألة.
 
 {{< figure src="courses/350/pr-discussion.png" caption="Memebers Can Open the Pull Request to See all Change Details and Discussion" >}}
 
 
-Everyone is expected to follow these steps whenever you work on development projects in this course. It might seem like an overhead at first, and you will not see the benefits right away. However, the goal is to get you to practice how to code as part of a team. So when you start your final project, you will start to see the benefits of this workflow.
+متوقع من الجميع اتباع هذه الخطوات عندما تعمل على مشاريع تطوير في هذا المقرر. قد يبدو الأمر وكأنه عبء في البداية ، ولن ترى الفوائد على الفور. ومع ذلك ، فإن الهدف هو جعلك تتدرب على كيفية البرمجة كجزء من فريق. لذلك عندما تبدأ مشروعك النهائي ، ستبدأ في رؤية فوائد سير العمل هذا.
+
 
 
 ## Git and GitHub
 
-Know that the tool we use for asynchronous collaboration is known as **Git**. It allows developers to keep track of all changes done to their projects. It can be used on the developer's computer using the command line or the GitHub desktop application. You can use it without GitHub.
+اعلم أن الأداة التي نستخدمها للتعاون غير المتزامن تُعرف باسم ** Git **. يسمح للمطورين بتتبع جميع التغييرات التي تم إجراؤها على مشاريعهم. يمكن استخدامه على كمبيوتر المطور باستخدام سطر الأوامر أو تطبيق سطح المكتب GitHub. يمكنك استخدامه بدون GitHub
 
-GitHub is the cloud platform hosting Git services. Its a social media platform for developers built around the Git application. Because Git is so useful for developers, it is hosted for on their platform for all to use for free, provided they make their repositories public. You can pay a subscription if you wish to have private repositories. Furthermore, GitHub built a set of project management tools and social coding tools around Git. The issues, classroom, projects, pull requests, and developer profiles are not part of Git, but were added specifically for GitHub and to make coding more social. We will use many of these features to improve collaboration and for project management purposes.
 
-There are numerous terms that you need to be aware of to use Git and GitHub effectively. We summarize them in the following table. The domain determines whether this term is specific to the Git application or has been introduced as part of the additional social features built by GitHub:
+
+GitHub هو "Cloud Platform" تستضيف خدمات Git. تعتبر منصة تواصل اجتماعي للمطورين مبنية حول تطبيق Git. لأن Git مفيد جدًا للمطورين والمبرمجين تم استضافتها مجانًا في منصتهم, بشرط أن تكون المستودعات عامة, يمكنك أن تدفع رسوم اشتىاك اذا كنت تىغب بإمتلاك مستودع خاص. بالإضافة إلى أن GitHub قامت ببناء مجموعة من أدوات إدارة المشروع و أدوات البرمجة الإجتماعية حول Git. المشكلات, الفئات والفصول, المشاريع, طلبات السحب, وملفات المطورين كلها لا تعد جزء من Git, لكن تمت اضافتهم خصيصًا ل GitHub ولجعل البرمجة عمل جماعي أكثر. سنستخدم العديد من هذه المميزات لتحسين التعاون ولأهداف ادارة المشروع 
+
+
+
+هناك العديد من المصطلحات التي يجب أن تكون على دراية بها لاستخدام Git و GitHub بشكل فعال. نلخصها في الجدول التالي. يحدد النطاق "Domain" ما إذا كان هذا المصطلح خاصًا بتطبيق Git أو تم تقديمه كجزء من الميزات الاجتماعية الإضافية التي أنشأها GitHub:
 
 ### Git and GitHub Terminology
 

@@ -54,3 +54,21 @@ These are the most important ones that you need to know at this time, and you wi
 Typically, we keep related features in their own app directoy. Every project must have at least a single app directory to hold the functionaloty created by the developer. If for example we need to include a shopping cart in our blog or an ecommerce component, we can create another app in our project named **cart** and place all ecommerce functionality in that directory. Similarly, we we introduce authentication and user management we would create an **accounts** directory and include all user management functionality there. So the apps are a matter of organization. 
 
 The general rule is to organize related functionality in the same directory. Developers will differ in how they organize functionality and how related they see things are. With experience, you will improve in organizing your project. At this stage of your career, how you organize your code will not have a significant impact on your project. It is mostly related to the reusability of the app in other projects, which might be important to you in the future.
+
+## Adding the App to Our Project
+
+This step is necessary to let Django know that we want to use this app as part of our project.
+
+Open `mysite/settings.py` then update the `INSTALLED_APPS` list to include our new blog app:
+
+```python
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'blog',  # Make sure this line is added
+]
+```

@@ -18,35 +18,48 @@ draft: False
 
 ---
 
-One of the most challenging aspects of software development is working effectively as part of a team. This problem is even more pronounced for inexperienced programmers because the way the code is organized will impact how well the team can collaborate. Fortunately we are using Django, so the way our code will be organized has already been decided for us. Django projects are organized to take advantage of OOP and enable effective teamwork. What remains is how team members can share their work together and combine it into a single code base (or project).
+العمل بشكل فعال كفريق هي احدى الجوانب الاكثر صعوبة في تطوير البرامج.
+تكون هذه المشكلة اكبر بالنسبة للمبرمجين عديمي الخبرة لأن طريقة نظام النص التشفيري للبرنامج ستؤثر على مدى تعامل اعضاء الفريق مع بعضهم البعض.
+لحسن حظنا، نحن نستخدم "جانقو"، لقد تم تنظيم طريقة عمل نظام الشفرة مسبقاً، مشاريع "جانقو" منظمة لكي نستغل ال “OOP” و نتمكن من العمل كفريق بشكل فعال. 
 
-There are two ways in which team members can collaborate or work together:
+ويبقى السؤال: كيف لأعضاء الفريق أن يتعاملوا مع بعضهم و يجمعوا النص التشفيري الى نص موحد. 
 
-# 1- Synchronous Collaboration
+هناك طريقتين للتعاون أو للعمل كفريق:
 
-In synchronous collaboration, the collaborating team members would all be online at the same time and work on the same file together. Such collaboration is easily enabled by replit.com and only requires that members share the link to the project they are working on. Replit.com does a good job of allowing team members to change the same file at the same time and communicate in realtime as they do so.
+# 1- التعاون المتزامن 
 
-However, such collaboration has limitations:
-1. Requires schedule coordination
-2. Limited number of collaborators, ideally it makes sense to have 2 work together synchronously.
-3. Contribution of members not tracked
-4. Might require the availability of at least one experienced team member to succeed.
 
-The main benefit of synchronous communication is **Knowledge Sharing**. The collaborators would work together on problem solving and the less experienced one would be learning greatly from the person they are collaborating with. Synchronous collaboration is similar is essence to eXprogramming.
+في التعاون المتزامن عبر الانترنت، أعضاء الفريق المتعاون يقومون بالعمل على نفس الملف في نفس الوقت مع بعضهم البعض،
+تسهل هذه العملية خلال موقع “repl.it” و تتطلب فقط إرسال رابط الملف الى اعضاء الفريق، موقع “repl.it” يقوم بعمل فعال في التعاون المتزامن حيث أنه يسمح لأعضاء المجموعة أن يعملوا على ملف واحد في آن واحد وأن يتواصلوا مع بعضهم خلال العمل.
 
-## How to Use Synchronous Collaboration on Replit.com?
+مع ذلك، هذا النوع من المشاركة محدود:
+١. يتطلب جدول منسق
+٢. عدد المشاركين محدود، من المنطقي أن يعمل فردان في وقت واحد 
+٣. مساهمة الأفراد غير متابعة 
+٤. ممكن أن تتطلب خبرة فرد من الأفراد لتتم عملية المشاركة بنجاح
 
-There are two main methods:
+الفائدة الأساسية للمشاركة المتزامنة عبر الانترنت هي مشاركة العلم. 
+يعمل المساهمين على حل المشاكل و في النهاية يستفيد الفرد الأقل خبرة بشكل كبير من أعضاء الفريق الآخرين، التعاون المتزامن مشابه ل”eXprogramming” نوعا ما.
 
-1. Create a team repl as part of the [MISCBA team on replit.com](https://replit.com/team/miscba) called a **multiplayer repl**:
+## كيفية استخدام التعاون المتزامن على موقع Replit.com؟
+
+هناك طريقتان رئيسيتان:
+
+1. قم بإنشاء فريق 
+repl كجزء من
+[فريق MISCBA على replit.com]
+ يسمى **repl متعدد اللاعبين**
+(https://replit.com/team/miscba)
 
 {{< figure src="courses/350/team-repl.png" caption="Creating a Multiplayer Repl" >}}
 
-then share the repl url from the browser:
+ثم شارك عنوان ال url من المتصفح:
 
 {{< figure src="courses/350/repl-url.png" caption="Share the Multiplayer Repl URL" >}}
 
-2. Alternatively, you can create a regular repl but add collaborators using the share button:
+2. بدلا من ذلك، يمكنك إنشاء 
+repl 
+عادي مع إضافة متعاونين باستخدام زر المشاركة:
 
 {{< figure src="courses/350/team-repl-alt.png" caption="Sharing Existing Repl" >}}
 
@@ -54,20 +67,33 @@ then share the repl url from the browser:
 
 # 2- Asynchronous Collaboration
 
-In asynchronous collaboration, each member of the collaborating team would work on the project in their own time and do not need to interact directly with other team members. Instead, a system is used to manage how each member changes the code of the project and to enable the consolidation of work from multiple members into a single code base. This is by far the most effective and widely used method of collaboration in programming. Currently, the most popular system used to manage synchronous collaboration is git, which is provided by github.com.
+في التعاون الغير متزامن، أفراد المجموعة بإمكانهم العمل على المشروع في وقتهم الخاص ولا حاجة للتفاعل مباشرة مع اعضاء المجموعة،
+بدلاً من ذلك، يتم استخدام نظام لإدارة كيفية قيام كل عضو بتغيير نص المشروع ولتمكين دمج العمل من أعضاء متعددين في نص واحد، هذه هي الطريقة الأكثر فعالية والأكثر استخداماً للتعاون في البرمجة، النظام الأكثر شيوعاً في الوقت الحالي لأدارة العمل المتزامن هو “git” الذي يوفره موقع “github”.
 
-Using git, or github will require developers to learn a new tool that might not be easy to learn at first. But once the developers use the tool correctly, it is possible to enable the collaboration of thousands of developers on a single project, as can be seen in the [linux kernal project](https://github.com/torvalds/linux).
+سيتطلب استخدام git أو github من المطورين تعلم أداة جديدة قد لا يكون من السهل تعلمها في البداية. ولكن بمجرد استخدام المطورين للأداة بشكل صحيح ، من الممكن تمكين تعاون آلاف المطورين في مشروع واحد ، كما يمكن رؤيته في [مشروع لينوكس كيرنال]
+(https://github.com/torvalds/linux).
 
-Fortunately, replit.com integrates well with github. We will be using the main git features from within replite.com, and for other tasks such as merging  and resolving conflicts, we will use the web interface provided by github.com to perform these collaboration related tasks.
+لحسن الحظ، يتكامل موقع 
+replit.com 
+جيداً مع 
+github، 
+سنستخدم ميزات 
+git
+الرئيسية من داخل 
+replit.com،
+وبالنسبة للمهام الأخرىمثل دمج وحل المشاكل والتعارضات،
+سنستخدم واجهة الويب التي يوفرها
+github.com
+لأداء هذه المهام المتعلقة بالتعاون.
 
-Using github is not sufficient for collaborating effectively. To be effective, the following conditions must be met:
-1. Code organized to enable collaboration (Django forces that on the project in the way it organizes the code)
-2. Team must agree on a workflow that describes how each member will start work, what to work on, and how to share it when done.
-3. All team members must adhere to the workflow when coding for the project.
+استخدام github
+لا يكفي للتعاون بشكل فعال، لكي تكون فعالة يجب استيفاء الشروط التالية: 
+1. تم تنظيم الكود لتمكين التعاون (يفرض Django ذلك على المشروع بالطريقة التي ينظم بها الكود)
+2. يجب أن يتفق الفريق على سير عمل يصف كيف سيبدأ كل عضو العمل ، وما يجب العمل عليه ، وكيفية مشاركته عند الانتهاء.
+3. يجب على جميع أعضاء الفريق الالتزام بسير العمل عند الترميز  للمشروع.
+## سير العمل
 
-## Our Workflow
-
-Each team will have their own workflow, and so we will be recommended a workflow for you to use in this course. The workflow is as follows:
+سيكون لكل فريق مسار عمل خاص به ، ولذا فإننا نوصي بمسار عمل لتستخدمه في هذه الدورة التدريبية. سير العمل كما يلي:
 
 ```mermaid
 graph TD
@@ -84,11 +110,11 @@ graph TD
     E --> A
 ```
 
-**A task** could be creating a new feature or fixing an existing bug. The workflow describes how developers should behave when they work on a task. The main steps are:
+** يمكن أن تكون المهمة ** إنشاء ميزة جديدة أو إصلاح خطأ موجود. يصف مسار العمل الطريقة التي يجب أن يتصرف بها المطورون عند العمل في مهمة. الخطوات الرئيسية هي:
 
 {{% callout note %}}
-{{< icon name="github" pack="fab" >}} for steps performed on GitHub
-{{< icon name="code" pack="fas" >}} for steps preformed on Replit.com
+{{< icon name="github" pack="fab" >}} لمعرفة الخطوات التي نفذت على GitHub
+{{< icon name="code" pack="fas" >}} معرفة الخطوات التي نفذت على Replit.com
 {{% /callout %}}
 
 1. {{< icon name="github" pack="fab" >}} **Find a task or fix to work on:** It is the responsibility of the project manager to ensure that developers can find tasks to work on. These can be found listed on GitHub issues, the ticketing system used for the project, speaking to the project manager, or reading the requirements document. For this course, project managers should write down tasks as issues in GitHub. Developers can also assist by writing issues that can either bew feature suggestions or descriptions of bugs that need to be fixed. We will discuss project management in more detail in [the next section]({{< ref "proj-mgt.md" >}}).

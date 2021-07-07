@@ -81,3 +81,11 @@ pip install django
 | 2 |  [PyReview]({{< ref "courses/350/intro/python" >}})  | [{{< icon name="file-powerpoint" pack="fas" >}}]({{< ref "slides/350/python" >}})  |  [Form Project Teams on GitHub](https://classroom.github.com/g/kxc1jQKA) |
 | 3 |  [Collaboration]({{< ref "courses/350/intro/collab" >}})  | [{{< icon name="file-powerpoint" pack="fas" >}}]({{< ref "slides/350/collab" >}})  | [Collboration Exercise](https://classroom.github.com/g/7iv9aOyv)  |
 | 3 |  [Project Management]({{< ref "courses/350/intro/proj-mgt" >}}) | | [Help translate this website](https://github.com/mis350/website-translation) |
+| 3 |  [Web Applications]({{< ref "courses/350/intro/webapplications" >}}) | [{{< icon name="file-powerpoint" pack="fas" >}}]({{< ref "slides/350/webapps" >}})  |  |
+| 4 |  [Django Overview]({{< ref "courses/350/intro/dev-process.md" >}}) | [{{< icon name="file-powerpoint" pack="fas" >}}]({{< ref "slides/350/django-overview" >}}) | |
+| 4 |  [Project Setup]({{< ref "courses/350/blog-project/setup.md" >}}) | [{{< icon name="file-powerpoint" pack="fas" >}}]({{< ref "slides/350/django-overview" >}}) | [Poll Project - Part 1]({{< ref "courses/350/poll-proj/part1.md" >}}) |
+| 4 |  [Data Models]({{< ref "courses/350/blog-project/models.md" >}}) | [{{< icon name="file-powerpoint" pack="fas" >}}]({{< ref "slides/350/django-models" >}}) | |
+| 5 |  [Django Admin]({{< ref "courses/350/blog-project/admin.md" >}}) | [{{< icon name="file-powerpoint" pack="fas" >}}]({{< ref "slides/350/django-admin" >}}) | |
+| 5 |  [Improved Django Admin]({{< ref "courses/350/blog-project/improved-admin.md" >}}) | [{{< icon name="file-powerpoint" pack="fas" >}}]({{< ref "slides/350/django-admin" >}}) | |
+
+

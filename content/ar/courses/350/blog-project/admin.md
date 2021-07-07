@@ -1,20 +1,20 @@
 ---
 # Page title
-title: Admin Interface
+title: ادارة واجهه المستخدم
 
 # Title for the menu link if you wish to use a shorter link title, otherwise remove this option.
-linktitle: Admin
+linktitle: ادارة
 
 # Date page published
 date: 2021-03-23
 
 # Academic page type (do not modify).
-type: book
+type: كتاب
 
 # Position of this page in the menu. Remove this option to sort alphabetically.
 weight: 3
 
-draft: False
+draft: خطا
 
 
 ---
@@ -23,7 +23,7 @@ draft: False
 Switch to branch **3-admin** from **malmarz/isom350-blog** github repo to see this step's implementation
 {{% /callout %}}
 
-The admin interface allows the website administrator to manage the data for the web application. However, before you can use it you must tell Django which data models you want managed and you must setup the admin interface.
+لتسمح لواجهه الإدارة لمسؤول عن الموقع بإدارة البيانات لتطبيق الويب. ومع ذلك ، قبل أن تتمكن من استخدامه ، يجب أن تخبر Django بنماذج البيانات التي تريد إدارتها ويجب عليك مسؤل واجهة الإدارة.
 
 First, check the file mysite/urls.py, and check whether the following line exists:
 ```python
@@ -31,29 +31,28 @@ urlpatterns = [
     path('admin/', admin.site.urls),    
 ]
 ```
+ يخبر django أنه إذا قام شخص ما بفتح / path / admin على تطبيق الويب ، سيتم عرض شاشة تسجيل الدخول لواجهة المسؤول. إذا لم يكن هذا السطر موجودًا في ملف urls.py ، في العمل و هذا يعني أن django اذا كانت الاإعدادت جاهزة لتمكين  ، عند استخدام نموذج الإستبدال django admin interface ، سيتم تكوين واجهة الإدارة لك.
 
-This tells django that if someone opens the /admin/ path on the web application, they will be shown the login screen for the admin interface. If this line does not exist in the urls.py file, this means that django was not setup to enable the admin interface. By default, when using the replit django template, the admin interace will be configured for you. 
+حاول الآن تسجيل الدخول. ستلاحظ أنه لا يمكنك التسجيل وليس لديك حق الوصول إلى واجهة المسؤول. لاستخدام واجهة المسؤول ، تحتاج إلى إنشاء مستخدم مسؤول. للقيام بذلك ، نحتاج إلى التأكد من القيام بما يلي:
 
-Now try to login. You will notice that you cannot signup and you do not have access to the admin interface. To use the admin interface you need to create an admin user. To do that we need to make sure that the following is done:
-
-1. The tables in the database corresponding to the models in our Django project are created. There is more that Django is doing for us besides the blog model. It manages the authentication for the admin interface and will need to create tables for storing the credentials of the admin used. For this step we must run the following shell commands:
+1. تم إنشاء الجداول في قاعدة البيانات المطابقة للنماذج في مشروعنا Django. هناك المزيد الذي يفعله Django إلى جانب نموذج المدونة. يدير المصادقة لواجهة المسؤول وسيحتاج إلى إنشاء جداول لتخزين بيانات اعتماد المسؤول المستخدم. في هذه الخطوة ، يجب تشغيل أوامر shell التالية:
 
 ```bash
 python manage.py makemigrations
 python manage.py migrate
 ```
 
-The first command will prepare all the SQL commands to create the database tables for our project. The second shell command will execute it and create the tables.
+سيقوم الأمر الأول بإعداد جميع الأوامر SQL لإنشاء جداول قاعدة البيانات لمشروعنا. أمر shell الثاني سينفذه وينشئ الجداول.
 
-2. Once the database is properly configured we can then create the admin user using the following shell command:
-3. 
+2. بمجرد تكوين قاعدة البيانات بشكل صحيح ، يمكننا بعد ذلك إنشاء المستخدم المسؤول باستخدام أمر shell التالي:
+. 
 ```bash
 python manage.py createsuperuser
 
 ```
-You will be presented with instructions, follow them to create the admin user and use the information to login to the admin interface. You will notice that the Posts for our blog are not there. So let's tell the admin interface that we want to manage the Posts in our blog app using the admin interface.
+سيتم تزويدك بالتعليمات ، اتبعها لإنشاء المستخدم المسؤول واستخدام المعلومات لتسجيل الدخول إلى واجهة المسؤول. ستلاحظ أن المنشورات الخاصة بمدونتنا غير موجودة. لذلك دعنا نخبر واجهة المسؤول بأننا نريد إدارة المنشورات في تطبيق المدونة الخاص بنا باستخدام واجهة المسؤول.
 
-For that, open blog/admin.py and update it to include the following:
+لذلك ، افتح blog / admin.py وقم بتحديثه ليشمل ما يلي:
 
 ```python
 from django.contrib import admin
@@ -63,6 +62,6 @@ from .models import Post
 admin.site.register(Post)
 ```
 
-Here we imported the Post model, then registered it with the admin site. This tells Django that we want the Post model to be managed by the admin interface. Now login to the admin interface, and you will see that you can add/edit/delete blog posts from the admin interface. 
-
-You can find our more on the admin interface by referring to [Django's documentation on the admin interface](https://docs.djangoproject.com/en/3.1/ref/contrib/admin/)
+هنا قمنا باستيراد نموذج Post ، ثم سجلناه في موقع المسؤول. هذا يخبر Django نريد أن تتم إدارة نموذج Post بواسطة واجهة الإدارة. قم الآن بتسجيل الدخول إلى واجهة المسؤول ، وسترى أنه يمكنك إضافة / تحرير / حذف منشورات المدونة من واجهة المسؤول.
+يمكنك العثور على المزيد على واجهة الإدارة بالرجوع إلى
+ [وثائق Django على واجهة الإدارة](https://docs.djangoproject.com/en/3.1/ref/contrib/admin/)

@@ -65,7 +65,7 @@ sequenceDiagram
 ```
 ### Web 2.0 Applications
 
-All that changed in the Web2.0 era is that web applications were leveraged to involve the user in generating the content for web applications. Wikipedia, twitter, facebook ..etc. All these platforms did not have content but relied on the network of users to generate content and value. The web application though was still the same utilizing an application server that performed the actions and web server serving only static files. However, the scale is now much bigger and the infrastructure is no much more complex to be able to handle the increase in number of users and content traveling both ways. A webapplication such as facebook's would have a cluster of webserver and another for application servers, and a third for databases all working together to to serve as the infrastructure for the facebook platform. With this increase in users, now emerged the need to make the websites more responsive and less demanding, which was the empitus for the next stage in the evolution of web applications. 
+All that changed in the Web2.0 era is that web applications were leveraged to involve the user in generating the content for web applications. Wikipedia, twitter, facebook ..etc. All these platforms did not have content but relied on the network of users to generate content and value. The web application though was still the same utilizing an application server that performed the actions and web server serving only static files. However, the scale is now much bigger and the infrastructure is no much more complex to be able to handle the increase in number of users and content traveling both ways. A webapplication such as facebook's would have a cluster of webserver and another for application servers, and a third for databases all working together to to serve as the infrastructure for the facebook platform. With this increase in users, now emerged the need to make the websites more responsive and less demanding, which was the impetus for the next stage in the evolution of web applications. 
 
 
 ```mermaid
@@ -190,7 +190,7 @@ This is a simple introduction to HTTP protocol, for more detailed description of
 
 ### The Protocols
 
-- **HTTP:** Hyper Text Transerver Protocol. This is a clear text based protocol where client and server communicate using readable text.
+- **HTTP:** Hyper Text Transfer Protocol. This is a clear text based protocol where client and server communicate using readable text.
 - **HTTPS:** Similar to HTTP, but the text is encrypted.
 - **SSL/TLS:** Two of the main protocols used for encrypting HTTPS communication text. SSL stands for Secure Socket Layer and is the predecessor to TLS. Now most websites use TLS, which stands for Transport Layer Security. 
 - **HTML:** Hypter Text Markup Language. It is a language that is used to give a text document structure and also used to change text formatting, just like a word document. HTML documents are text base and look something like the following:
@@ -211,14 +211,14 @@ You can see the HTML document is readable. If it is opened by the browser it wil
 {{< figure src="courses/350/html.png" caption="HTML Page Example" >}}
 - **CSS:** Cascading Style Sheets. It is the way in which to control the styles, colors, fonts and how the text looks in HTML pages. Best practice is to use HTML to design the structure of the page, then setting the formatting and colors of the page using CSS.
 
-To further experiment and learn about HTML you can use this [HTML scratch pad](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_document) to experement with writing HTML. Use this [HTML tutorial](https://www.w3schools.com/html/) to learn what tags you can use.
+To further experiment and learn about HTML you can use this [HTML scratch pad](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_document) to experiment with writing HTML. Use this [HTML tutorial](https://www.w3schools.com/html/) to learn what tags you can use.
 
 
 ### Where Does Django Fit In?
 
-Django is a python based web application framework. It allows the user to easily handle HTTP requests and produce correct HTTP responses. However, instead of working with HTTP text, it hides all of this from the developer and allows the developer to work as if they are building any other Python based application. The framework puts some restrictions on the developer, for example, it forces the developer to organize project files in a certain way and use specific files for functions that handle HTTP request/response cyles and other files for database management. As a result, upon successfully adhering to these restrictions, the developer gets many services and benefits for free. For example, improved security, easy encryption, admin interface to manage data, clean URL paths, easy templating and many many more.
+Django is a python based web application framework. It allows the user to easily handle HTTP requests and produce correct HTTP responses. However, instead of working with HTTP text, it hides all of this from the developer and allows the developer to work as if they are building any other Python based application. The framework puts some restrictions on the developer, for example, it forces the developer to organize project files in a certain way and use specific files for functions that handle HTTP request/response cycles and other files for database management. As a result, upon successfully adhering to these restrictions, the developer gets many services and benefits for free. For example, improved security, easy encryption, admin interface to manage data, clean URL paths, easy templating and many many more.
 
-In this course will only touch upon some of the features of Django. Using Django can be as complicated or simple as a developer needs. It can be the means to quickly build web application prototypes or engineer a complex solution that can serve large scal websites like twitter, facebook, or snapchat. Some well known services on the internet were built using Python, including:
+In this course will only touch upon some of the features of Django. Using Django can be as complicated or simple as a developer needs. It can be the means to quickly build web application prototypes or engineer a complex solution that can serve large scale websites like twitter, facebook, or snapchat. Some well known services on the internet were built using Python, including:
 - Instagram
 - Uber
 - Pintrest
@@ -227,4 +227,4 @@ In this course will only touch upon some of the features of Django. Using Django
 - Reddit
 - and many more
 
-However, keep in mind that as the site grows and more engineers are hired to work on it, other technologies are utilized to manage the infrastructure. Therefore, we cannot say that these websites are build using only Django or Python. But they evovled to include other technologies and languages each serving a specific purpose. Ideas are typically initially implemented with a single technology however. Should they evolve to incorporate other technologies is likely a sign that the service is successful and is growing.
+However, keep in mind that as the site grows and more engineers are hired to work on it, other technologies are utilized to manage the infrastructure. Therefore, we cannot say that these websites are built using only Django or Python. But they evolved to include other technologies and languages each serving a specific purpose. Ideas are typically initially implemented with a single technology however. Should they evolve to incorporate other technologies is likely a sign that the service is successful and is growing.

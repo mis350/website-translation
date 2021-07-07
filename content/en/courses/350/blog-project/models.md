@@ -1,10 +1,9 @@
 ---
-# Page title
+ # Page title
 title: The Blog Project Models
 
 # Title for the menu link if you wish to use a shorter link title, otherwise remove this option.
-linktitle: Models
-
+linktitle: Models 
 # Date page published
 date: 2021-03-23
 

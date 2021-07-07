@@ -3,7 +3,7 @@
 title: The Poll Project Assignment
 
 # Title for the menu link if you wish to use a shorter link title, otherwise remove this option.
-linktitle: The Poll Project
+linktitle: The Poll Project Assignment
 
 # Date page published
 date: 2021-03-23
@@ -20,7 +20,7 @@ draft: False
 
 Your main assignment will be this poll assignment project. You are expected to work individually on this project.
 
-Every week, I will specify some requirements that you need to complete before the due date and submit through replit.com.
+Every couple of weeks, I will specify some requirements that you need to complete before the due date and submit through replit.com.
 
 The details here will give you a general idea of what the project is incase you want to get an early start on working on the project. I will also be providing some tip here as we progress.
 

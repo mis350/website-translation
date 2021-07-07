@@ -18,53 +18,50 @@ draft: False
 
 
 ---
-{{% callout note %}}
-Switch to branch **6-urls** from **malmarz/isom350-blog** github repo to see this step's implementation
-{{% /callout %}}
 
-Django URLs allow us to link paths in our web application to iew function. Users of our web application cannot use a view function if it is not linked to a path. For example, we mentioned from our [last exercise on view]({{< ref "views.md" >}}) that DetailedView will allow users of our applications to specify the post they want to view using the URL. The example we used is that if a user opens the path `/post/1`, then they can view the details of the first post. With url paths, we can tell django that the `/post/` path is used to open the detailed view.
+تسمح لنا عناوين URL لـ Django بربط المسارات في تطبيق الويب الخاص بنا بوظيفة العرض. لا يمكن لمستخدمي تطبيق الويب الخاص بنا استخدام وظيفة العرض إذا لم تكن مرتبطة بمسار. على سبيل المثال ، ذكرنا من[آخر تمرين معروض] ({{<ref "views.md">}})سيسمح هذا العرض المفصل لمستخدمي تطبيقاتنا بتحديد المنشور الذي يريدون عرضه باستخدام عنوان URL. المثال الذي استخدمناه هو أنه إذا فتح المستخدم المسار`/ post / 1`، ثم يمكنهم عرض تفاصيل المنشور الأول. باستخدام مسارات url ، يمكننا إخبار django أن ملف`/ post /` يتم استخدام المسار لفتح العرض التفصيلي.
 
-The main urls.py path is the one found at `mysite/urls.py`. This file details what path exist in our application. It already includes information on the admin interface and we can tell that the path `/admin/` will be related to the admin interface. We will follow a Django convention in organizing the urls for our blog application by first creating a urls.py file in our blog app. So create the new `/blog/urls.py` and update it to look like this:
+مسار urls.py الرئيسي هو المسار الموجود في "mysite / urls.py". يوضح هذا الملف ما هو المسار الموجود في تطبيقنا. يتضمن بالفعل معلومات عن واجهة المسؤول ويمكننا معرفة ذلك المسار`/ admin /`ستكون مرتبطة بواجهة الإدارة. سنتبع اتفاقية Django في تنظيم عناوين url لتطبيق المدونة الخاص بنا عن طريق إنشاء ملف urls.py أولاً في تطبيق المدونة الخاص بنا. لذا قم بإنشاء ملف`/ blog / urls.py` وقم بتحديثه ليبدو كالتالي:
 
-```python
-from . import views #1
-from django.urls import path  #2
+"python"
+من عند . استيراد طرق العرض # 1
+من مسار استيراد django.urls # 2
 
-urlpatterns = [ #3
-    path('', views.PostListView.as_view(), name='home'), #4
-    path('<slug:slug>/', views.PostDetailView.as_view(), name='post_detail'), #5
-] #6
-```
+أنماط عنوان url = [# 3
+ المسار ('' ، views.PostListView.as_view () ، الاسم = 'المنزل') ، # 4
+ المسار ('<slug: slug> /'، views.PostDetailView.as_view ()، name = 'post_detail')، # 5
+] # 6
+""
 
-So let's explain what is happening here:
-- **In line #1**, we are importing all the view functions we created from the previous step, because we want to link them to paths.
-- **In line #2**, we are important the path function that we will use to link paths to view function as we shall see in lines #4 and #5
-- **In line #3**, this is how Django take the paths. We must use the variable **urlspattens**, which is a global Django variable, and update it with the **list** patterns that we want use for the paths in our applications. 
-- **In line #4**, this is the first path we want to create, Path is just a function that accepts 3 arguments, the first one is the path, here an empty path means if we just mention our `/blog/` path without any addition to it, the PostListView will be shown (This is the second argument). The final argument is just a unique name we give to this path to make it wasy for us to create link to this path.
-- **In line #5**, this is the same as line 4. Notice, the path is now `<slug:slug>/`. The < > tag is used to tell Django that we are expecting a slug (a special string) here and we want to extract that slug from the path and create a variable named also slug with the contents of the path and send it to the view function. If we change it to something like `<int:sid>/` means to expect an integer and that we want to extract that integer from the path and send the value as a variable named sid to the view function. But since we are using. The following [section from Django's documentation on URLs](https://docs.djangoproject.com/en/3.1/topics/http/urls/#how-django-processes-a-request) should clarify how paths should be written.
-- **In line #6**, remember this is a python list, we have to close the list with a bracket.
+لذلك دعونا نشرح ما يحدث هنا:
+- ** في السطر رقم 1 **، نقوم باستيراد جميع وظائف العرض التي أنشأناها من الخطوة السابقة ، لأننا نريد ربطها بالمسارات.
+- ** في السطر رقم 2 **، نحن مهمون لوظيفة المسار التي سنستخدمها لربط المسارات لعرض الوظيفة كما سنرى في السطور رقم 4 و 5
+- ** في السطر رقم 3 **، هذه هي الطريقة التي يتخذ بها Django المسارات. يجب علينا استخدام المتغير ** urlspattens ** ، وهو متغير Django عالمي ، وتحديثه بأنماط ** list ** التي نريد استخدامها للمسارات في تطبيقاتنا.
+- ** في السطر رقم 4 **، هذا هو المسار الأول الذي نريد إنشاءه ، المسار هو مجرد وظيفة تقبل 3 وسيطات ، الأولى هي المسار ، وهنا يعني المسار الفارغ إذا ذكرنا للتو `/ مدونة /`المسار دون أي إضافة إليه ، سيتم عرض PostListView (هذه هي الوسيطة الثانية). الوسيطة الأخيرة هي مجرد اسم فريد نطلقه على هذا المسار لنجعل من السهل علينا إنشاء رابط إلى هذا المسار.
+- ** في السطر رقم 5 **، هذا هو نفس السطر 4. لاحظ أن المسار هو الآن `<slug: slug> /`. تُستخدم العلامة <> لإخبار Django أننا نتوقع سبيكة (سلسلة خاصة) هنا ونريد استخراج تلك سبيكة من المسار وإنشاء متغير يُسمى أيضًا slug بمحتويات المسار وإرساله إلى العرض وظيفة. إذا غيرناه إلى شيء مثل`<int: sid> /`يعني توقع عدد صحيح وأننا نريد استخراج هذا العدد الصحيح من المسار وإرسال القيمة كمتغير يسمى sid إلى وظيفة العرض. ولكن بما أننا نستخدم. الأتى[قسم من توثيق Django على عناوين URL] (https://docs.djangoproject.com/en/3.1/topics/http/urls/#how-django-processes-a-request) يجب أن توضح كيفية كتابة المسارات.
+- ** في السطر رقم 6 **، تذكر أن هذه قائمة بيثون ، علينا إغلاق القائمة بقوس.
 
-What does this file do? well, here we are telling Django if the user open the `/blog/` path without any additional text in the path then our web app would display a list of posts. If the user opens `/blog/title-of-post` then django would search for a post that has the slug **title-of-post** and display it. Remember, slugs are just special strings with no spaces. It is commonly used to make urls to blogposts meaningful. So `/blog/my-first-python-program` is clearly a post about programming as apposed to `/blog/1` which we cannot tell will be about what.
+ماذا يفعل هذا الملف؟ حسنًا ، نحن هنا نقول لـ Django إذا فتح المستخدم ملف`/ مدونة /`المسار دون أي نص إضافي في المسار ، سيعرض تطبيق الويب الخاص بنا قائمة بالمنشورات. إذا فتح المستخدم`/ blog / title-of-post`ثم سيبحث django عن منشور يحتوي على slug ** title-of-post ** ويعرضه. تذكر أن السبيكات هي مجرد أوتار خاصة بدون مسافات. يتم استخدامه بشكل شائع لجعل عناوين url إلى المدونات ذات مغزى. وبالتالي"/ blog / my-first-python-program" من الواضح أنه منشور عن البرمجة كما هو مناسب `/ مدونة / 1` الذي لا يمكننا إخباره سيكون حول ماذا.
 
-But we are not completly done yet, we must link this urls.py file in our blog app to the main **mysite/urls.py**. This is achieved by updating **mysite/urls.py** as follows:
+لكننا لم ننتهي بعد بشكل كامل ، يجب أن نربط ملف urls.py هذا في تطبيق المدونة الخاص بنا بـ ** mysite / urls.py ** الرئيسي. يتم تحقيق ذلك عن طريق تحديث ** mysite / urls.py ** على النحو التالي:
 
-```python
-from django.contrib import admin
-from django.urls import path, include # Added include
+"python"
+من django.contrib استيراد المسؤول
+من مسار استيراد django.urls ، قم بتضمين # مضاف يشمل
 
-urlpatterns = [
-    path('admin/', admin.site.urls),   
-    path('blog/', include('blog.urls')), # Added this line
+أنماط عنوان url = [
+ المسار ("admin /" ، admin.site.urls) ، 
+ path ('blog /' ، بما في ذلك ('blog.urls')) ، # تمت إضافة هذا السطر
 ]
-```
+""
 
-Notice we updated two lines. The first one in the import, we added the include function which will be used to fetch the url paths we created in **blog/urls.py**. The 2nd line we added is just a path function again, but with only two paramaters. The first one is `blog/`, here we are telling Django that all our blog paths will start with `blog/`. The second argument is the path to `blog/urls.py`, but we removed the .py part and replaced the / with .. So all the paths we defined in `blog/urls.py` are now included as part of our web application. So go ahead and run the development server and you will see a different screen show up:
+لاحظ أننا قمنا بتحديث سطرين. أول واحد في الاستيراد ، أضفنا وظيفة التضمين التي سيتم استخدامها لجلب مسارات url التي أنشأناها في ** blog / urls.py **. السطر الثاني الذي أضفناه هو مجرد وظيفة مسار مرة أخرى ، ولكن مع اثنين فقط من المعلمات. اول واحد هومدونة / `، نحن هنا نقول لـ Django أن جميع مسارات مدونتنا ستبدأ بها مدونة / `. الحجة الثانية هي الطريق إلى"blog / urls.py"، لكننا أزلنا الجزء .py واستبدلنا / بـ .. لذلك كل المسارات التي حددناها"blog / urls.py"يتم تضمينها الآن كجزء من تطبيق الويب الخاص بنا. لذا انطلق وقم بتشغيل خادم التطوير وسترى شاشة مختلفة تظهر:
 
-{{< figure src="courses/350/urls1.png" caption="The Expect Error After Wiring URLs Correctly" >}}
+{{<figure src = "course / 350 / urls1.png" caption = "توقع الخطأ بعد توصيل عناوين URL بشكل صحيح">}}
 
-Here Django is telling us that it cannot find anything to serve at / (known as the root path), because we only defined `admin/` and `blog/`. As a matter of fact, as part of Django's assistance, it is displaying the list of paths that are recognized in our web app and its already showing both `admin/` and `blog/`. Remember to use this information to understand what is happenning. So now add the path `/blog/` to the url of your web application. If everything is done correctly, you should see the following error:
+هنا يخبرنا Django أنه لا يمكنه العثور على أي شيء للخدمة في / (المعروف باسم مسار الجذر) ، لأننا حددنا فقط `المشرف /` و مدونة / `. في واقع الأمر ، كجزء من مساعدة Django ، فإنه يعرض قائمة المسارات التي تم التعرف عليها في تطبيق الويب الخاص بنا ويظهر بالفعل كلاً من`المشرف /` و مدونة / `. تذكر استخدام هذه المعلومات لفهم ما يحدث. حتى الآن أضف المسار`/ مدونة /`إلى عنوان url لتطبيق الويب الخاص بك. إذا تم كل شيء بشكل صحيح ، يجب أن ترى الخطأ التالي:
 
-{{< figure src="courses/350/urls2.png" caption="The Expect Templates Related Error" >}}
+{{<figure src = "course / 350 / urls2.png" caption = "توقع الخطأ المتعلق بالقوالب">}}
 
-Here Django is telling us that it successfully ran the PostList view function we created but cannot find the template post_list.html. This will be the last remaining piece to complete the functionality of our web application in listing posts, which we will explain in the next section.
+يخبرنا Django هنا أنه نجح في تشغيل وظيفة عرض PostList التي أنشأناها ولكن لا يمكنه العثور على القالب post_list.html. ستكون هذه آخر قطعة متبقية لإكمال وظائف تطبيق الويب الخاص بنا في قوائم المنشورات ، والتي سنشرحها في القسم التالي.
 

@@ -5,23 +5,49 @@
 - based on Hugo and wowchemy
 - Hosted with Netlify
 
-# To Help Contribute to Arabic Translation
+# Video Explanation of How To Participate
 
-1. Fork the project to your github account
-2. Check the [project board](https://github.com/mis350/website-translation/projects/1) for translation tasks and claim one task to yourself. Read the section in our course on [project management](https://malmarz.netlify.app/en/courses/350/intro/proj-mgt/) to understand why this step is important.
-3. **IMPORTANT** Look for the file you want to translate under `/content/en/courses/` then copy it to the same spot under `/content/ar/courses/`. For example:
+[![](https://img.youtube.com/vi/ZGW_gwWeYDA/0.jpg)](https://youtu.be/ZGW_gwWeYDA)
+# Important Note
 
-You want to translate the file `/content/en/courses/intro/collab.md`
-Then you must copy it first to `/content/ar/courses/intro/collab.md`. This would be the copy that you trnslate to arabic.
+- **Do not merge pull requests!**
+- Send your pull requests to `mis350/website-translation` repo.
+- The translation involves the files under `/content/en/courses/` and `/content/ar/courses/`. You can **IGNORE** all other files.
+- When in doubt, contant your instructor with questions.
+- Bonus points will be based on the number of lines you translate, which can be viewed under the [insights tab](https://github.com/mis350/website-translation/graphs/contributors)
 
-If the file exists, then no need to copy it and start translating it. Make sure it matches the content found under the `/content/en` directory.
+# Creating Pull Requests
 
-4. Translate the copy found under `/content/ar/courses/` to arabic.
-5. If done with a file, then commit you work and send a pull request to merge your work branch to the `main` branch at `mis350/web-translation`
-6. Look for another file to transelate.
+### Wrong pull request
 
-### Important Note:
-- I will do my best to ensure all the content found under `/content/en/courses/` to have a copy under `/content/ar/courses/`. If you cannot find the copy under the arabic directory, then please copy the file as explained in step 3. 
-- Translate only the work found under `/content/ar/courses/` and `/content/en/courses/`, please ignore all other directories.
+![Screen Shot 2021-04-24 at 5 14 36 PM](https://user-images.githubusercontent.com/17110015/115961866-03baa700-a521-11eb-95e0-dc0f4f2bc20e.png)
+
+### Correct Pull Requests
+
+![Screen Shot 2021-04-24 at 5 16 12 PM](https://user-images.githubusercontent.com/17110015/115961878-12a15980-a521-11eb-9013-23ba2197fd04.png)
+
+![Screen Shot 2021-04-24 at 5 16 53 PM](https://user-images.githubusercontent.com/17110015/115961879-146b1d00-a521-11eb-8bf7-e2c0d87be7e8.png)
+
+
+# How to Participate in Translation
+
+1- Go to the [Project Board](https://github.com/mis350/website-translation/projects/1) and look for a tranlation task under the **To Do** column:
+
+![translation-board](https://user-images.githubusercontent.com/17110015/115769802-a0ac0180-a3b4-11eb-83c5-e40ec10c4718.png)
+
+2- Move the task that you want to work on to the **In Progress** list and assign it to yourself, to let everyone know what you are working on:
+
+![assign-ticket](https://user-images.githubusercontent.com/17110015/115770368-46f80700-a3b5-11eb-8a74-ca67fddfffe0.png)
+
+3- Clone the `mis350/website-translation` repository on Replit.com
+
+4- Create a branch named after the ticket you chose and your name, for example `mohammad-translate-design.md`
+
+5- Work on the translation and continue to commit to the branch. For that, first copy the file you are translating from `/content/en/courses/` to the same directory under `/content/ar/courses/`. Then directly translate the newly copied file under `/content/ar/courses/` only.
+
+6- Once you are done with the task, commit and push for the last time then create a pull request to merge your branch to the main branch on GitHub to the `mis350/website-translation` repo, and you are done!
+
+7- Now you can find another translation task to work on
+
 
 Thank you for your participation!

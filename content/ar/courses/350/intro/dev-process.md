@@ -1,5 +1,5 @@
 ---
-# Page title
+# Page title 
 title: The Django Development Process
 
 # Title for the menu link if you wish to use a shorter link title, otherwise remove this option.
@@ -19,14 +19,17 @@ draft: False
 
 ---
 ## What is Django?
+## ما هو جانغو؟  
 
-Django is a web application development framework. Meaning, it is a set of rules, libraries, and conventions that you could use to streamline the process of building a web application.
+جانغو هو إطار عمل لتطوير موقع التطبيقات بما يعني هو مجموعة من القواعد والمكتبات والأعراف التي يمكن إستعمالها لتسهيل عملية بناء موقع تطبيقي. 
+جانغو هو إطار عملي ولهذا السبب يفرض جانغو عدد كبير من القيود والطرق للعمل على المشروع. هذه القيود تضمن الحصول على الفوائد التي يعدنا  بها جانغو كما يتضمن عمل جماعي متطور وآمن* ويقرأ المعلومات التي تشرح وتعطي معلومات من النموذج، وإعادة الاستخدام، وإلى آخره.
 
-Given that Django is a framework, it enforces a number of restrictions and ways to do things on our proejct. These restrictions would guarantee that we can gain the benefits promised by Django including improved collaboration, security, admin interface, reusability ...etc.
+
 
 ## The Steps in the Development Process
+## الخطوات في عملية التطوير 
 
-Another benefit to adhering to the Django way of doing things is that it makes the development process more predictable. If the functional and data requirements are already known, then the way in which development is done is as follows:
+فائدة أخرى للالتزام بطريقة جانغو للعمل هو أنه يجعل عملية التطوير أكثر قابلة للتنبؤ. إذا كان الجزء العملي من متطلبات المعلومات معروفين سابقاً فتعمل طريقة التطوير بالخطوات الآتية: 
 
 ```mermaid
 graph TD
@@ -39,24 +42,36 @@ F -->|Refine or Work on Next Feature|D
 F -->|Refine or Work on Next Subproject|B
 ```
 
-## The Steps
-### 1- Setup Project
-The setup project step is done only once at the start of the project. It creates the source code directory structure for the django project. It is performed by creating a **Django Template** project in replit.com. When the project is created it will have the following structure:
+
+
+
+## الخطوات
+### 1- إعداد المشروع
+تتم خطوة إعداد المشروع مرة واحدة فقط في بداية المشروع. يقوم بإنشاء بنية دليل الكود المصدري لمشروع django. 
+يتم تنفيذه عن طريق إنشاء مشروع ** Django Template ** في replit.com  
+عند إنشاء المشروع سيكون له الهيكل التالي:
+{{< figure src="courses/350/project-structure.png" caption="Project Structure" >}}
+
+أهم الملفات هي:
+
+1. ** management.py: ** يُستخدم هذا لتنفيذ أوامر المشروع ، مثل إنشاء التطبيقات وتشغيل خادم django وإنشاء مستخدم متميز. 
+2. ** urls.py: ** هذا هو الملف الرئيسي الذي يصف المسارات التي سيحتويها تطبيق الويب. عادة ، سيشير كل مسار إلى خاصية واحدة.
+3. ** settings.py: ** هذا هو المكان الذي ستقيم فيه جميع تكوينات المشروع. سيحتاج هذا إلى تعديل عند بدء المشروع لأول مرة.
+
+للتأكد من أن الإعداد الخاص بك يعمل على  replit.com ، اضغط تشغيل {{< icon name="play" pack="fas" >}} الزر العلوي ، وسترى ما يلي في متصفحك:
+{{< figure src="courses/350/run_django.png" caption="Running Django on Replit.com" >}}
+
+أنت جاهز لبدء العمل في مشروع Django الخاص بك إذا رأيت هذه الشاشة ، وتذكر أن خادم تطوير Django يجب أن يكون قيد التشغيل لكي ترى عملك. لإيقاف الخادم ، تحتاج إلى ضغط الخيار في فوق الصفحة إيقاف
+{{< icon name="stop" pack="fas" >}}
+ 
+يوصى بشدة بفتح خادم الويب في نافذة المتصفح الخاصة به. سيسمح لك ذلك بالتنقل بسهولة في تطبيق الويب الخاص بك عن طريق إدخال عناوين URL مختلفة لاختبار أجزاء مختلفة من التطبيق.
+
+
+
 
 {{< figure src="courses/350/project-structure.png" caption="Project Structure" >}}
 
-The most important files are:
-1. **manage.py:** This is used to execute project commands, such as creating apps, running the django server, and creating a superuser.
-2. **urls.py:** This is the main file which describes what the paths the web application will contain. Typically, each path will point to a single feature.
-3. **settings.py:** This is where all the project configuration will reside. This will be need modification when starting the project for the first time.
 
-To confirm that your setup works on replit.com, click on the Run{{< icon name="play" pack="fas" >}} button up top, and you should see the following in your browser:
-
-{{< figure src="courses/350/run_django.png" caption="Running Django on Replit.com" >}}
-
-You are ready to start working on your Django project if you see this screen, and remember, the development Django server must be running for you to see your work. To stop the server, you need to click the Stop{{< icon name="stop" pack="fas" >}} button up top.
-
-It is highlly recommended that you open the webserver in it's own browser window. This would allow you to easily navigate your web application by entering different URLs to test different parts of the application.
 
 ### 2- Start App or Subproject
 

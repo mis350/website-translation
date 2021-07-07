@@ -21,20 +21,21 @@ draft: False
 
 تطبيقات الويب هي تطبيقات تعمل في متصفح الويب.  حلت تطبيقات الويب محل تطبيقات سطح المكتب بسبب الفوائد التالية:
 
+
 1. ** إمكانية التشغيل البيني **: نظرًا لأن المتصفحات متوفرة على جميع أنواع أجهزة الكمبيوتر والهواتف في العصر الحالي بغض النظر عن المواصفات أو نظام التشغيل المستخدم.  لذلك ، يمكن استخدامها من قبل عدد أكبر من العملاء المحتملين.
-2. **Manageability**: The code is developed once and maintained on a central web server. To update the application or fix bugs, the owner of the application is required to only update the application on their server and all clients would benefit from the update. Unlike desktop applications where customers are required to download newer versions of the application. In web applications, the update happens transparently.
-3. **Relative Security**: While security will always be a challenge, the fact that the application is managed in a central location means that the owner has more control in terms of monitoring, management, and updating the application. Making security **relatively** easier compared to **server** based desktop applications. 
-4. **Rapid Improvement in tools and Capabilities**: Given the level of innovation occuring in the web application development tools and infrastructure, there is a certain type of applciations or tasks that can only be implemented when using a web application asthe web application infrastructure can grow to accomidate a greater number of users and capabilities. For example, the big data era has been brought about due to the emergence of the web applications at scales that serve global customers. 
+2. **Manageability**: تم تطوير الكود مرة واحدة والاحتفاظ بها على خادم ويب مركزي. لتحديث التطبيق أو إصلاح الخلل ، يجب على مالك التطبيق تحديث التطبيق فقط على الخادم الخاص به وسوف يستفيد جميع العملاء من التحديث. على عكس تطبيقات سطح المكتب حيث يُطلب من العملاء تنزيل إصدارات أحدث من التطبيق. في تطبيقات الويب ، يتم التحديث بشفافية.
+3. **Relative Security**: على الرغم من أن الأمان يمثل تحديًا دائمًا ، فإن حقيقة أن التطبيق يُدار في موقع مركزي يعني أن المالك يتمتع بقدر أكبر من التحكم فيما يتعلق بمراقبة التطبيق وإدارته وتحديثه. جعل الأمان ** أسهل نسبيًا ** مقارنة بتطبيقات سطح المكتب القائمة على الخادم. 
+4. **Rapid Improvement in tools and Capabilities**: نظرًا لمستوى الابتكار الذي يحدث في أدوات تطوير تطبيقات الويب والبنية التحتية ، هناك نوع معين من التطبيقات أو المهام التي لا يمكن تنفيذها إلا عند استخدام تطبيق ويب حيث يمكن أن تنمو البنية التحتية لتطبيقات الويب لاستيعاب عدد أكبر من المستخدمين والقدرات. على سبيل المثال ، نشأ عصر البيانات الضخمة بسبب ظهور تطبيقات الويب على نطاقات تخدم العملاء العالميين. 
    
-However, web applications come with their own set of challenges:
-1. **Complexity of Infrastructure**: No longer is application development just a matter of building the software. Building web applications now involves building the infrastructure, building the software, and managing the deployment and operation of the application including dealing with any scaling issues that may arrise from an increase in the number of users. All these are problems that were not considered when building conventional desktop applications.
-2. **Security and Privacy**: User data and security is now the responsibility of the owner of the web application. Given that the application will require an internet connection, this would introduce an additional layer of risk that the owner needs to take into account and manage.
-3. **Requires an Internet Connection**: Whether its a simple application or complex network application, web applications will always require the user to have an internet connection. This is certainly not a significant issue in this age, however, it means that web application cannot be utilized in situations where the internet is not available.
-4. **Rapid Improvement in tools and Capabilities**: This is actually both a benefit and a liability. The tools used to build web applications is undergoing rapid improvement with new technologies emerging every day. While this means web applications will have new capabilities, it also means that the owner of the web application needs to rapidly improve and learn as their current development knowledge can easily be obselete within a short period of time.
+ومع ذلك ، تأتي تطبيقات الويب مع مجموعة التحديات الخاصة بها:
+1. **Complexity of Infrastructure**:لم يعد تطوير التطبيقات مجرد مسألة بناء البرنامج. يتضمن بناء تطبيقات الويب الآن بناء البنية التحتية ، وبناء البرامج ، وإدارة نشر التطبيق وتشغيله بما في ذلك التعامل مع أي مشكلات تتعلق بالتوسيع قد تنجم عن زيادة عدد المستخدمين. كل هذه مشكلات لم يتم أخذها في الاعتبار عند إنشاء تطبيقات سطح المكتب التقليدية.
+2. **Security and Privacy**: بيانات المستخدم والأمان هي الآن مسؤولية مالك تطبيق الويب. نظرًا لأن التطبيق سيتطلب اتصالاً بالإنترنت ، فإن هذا من شأنه أن يؤدي إلى طبقة إضافية من المخاطر التي يحتاج المالك إلى مراعاتها وإدارتها.
+3. **Requires an Internet Connection**: سواء أكان تطبيقًا بسيطًا أو تطبيق شبكة معقدًا ، فستتطلب تطبيقات الويب دائمًا من المستخدم أن يكون لديه اتصال بالإنترنت. هذه بالتأكيد ليست مشكلة كبيرة في هذا العصر ، ومع ذلك ، فهذا يعني أنه لا يمكن استخدام تطبيق الويب في المواقف التي لا يتوفر فيها الإنترنت.
+4. **Rapid Improvement in tools and Capabilities: هذا هو في الواقع منفعة والتزام. تخضع الأدوات المستخدمة لبناء تطبيقات الويب لتحسين سريع مع ظهور تقنيات جديدة كل يوم. في حين أن هذا يعني أن تطبيقات الويب ستتمتع بإمكانيات جديدة ، فهذا يعني أيضًا أن مالك تطبيق الويب يحتاج إلى التحسين والتعلم بسرعة حيث يمكن بسهولة حذف معرفته التنموية الحالية في غضون فترة زمنية قصيرة.
 
 ## Web Application History
 
-Web application have evolved over the years to take different forms. This brief history and will clarify what the difference is between a **Web Page** and a **Web Application**.
+تطورت تطبيقات الويب على مر السنين لتأخذ أشكالًا مختلفة. هذا التاريخ المختصر وسيوضح الفرق بين صفحة الويب و تطبيق الويب.
 
 ### Web Page
 

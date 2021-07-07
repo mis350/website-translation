@@ -1,9 +1,10 @@
 ---
+
 # Page title
-title: The Poll Project Assignment
+title: مهمة مشروع الاستطلاع
 
 # Title for the menu link if you wish to use a shorter link title, otherwise remove this option.
-linktitle: The Poll Project
+linktitle: مشروع الاستطلاع
 
 # Date page published
 date: 2021-03-23
@@ -14,39 +15,41 @@ type: book
 # Position of this page in the menu. Remove this option to sort alphabetically.
 weight: 30
 
-draft: False
+draft: false
 
 ---
 
-Your main assignment will be this poll assignment project. You are expected to work individually on this project.
+ستكون مهمتك الرئيسية هي مشروع تعيين الاستطلاع هذا ومن المتوقع أن تعمل بشكل فردي في المشروع
 
-Every week, I will specify some requirements that you need to complete before the due date and submit through replit.com.
+كل أسبوع ، سأحدد بعض المتطلبات التي تحتاج إلى إكمالها قبل تاريخ الاستحقاق وإرسالها من خلال موقع  
+replit.com
 
-The details here will give you a general idea of what the project is incase you want to get an early start on working on the project. I will also be providing some tip here as we progress.
+ستمنحك التفاصيل هنا فكرة عامة عن ماهية المشروع في حالة رغبتك في البدء مبكرًا في العمل على المشروع. سأقدم أيضًا بعض النصائح هنا أثناء تقدمنا.
 
-## Users
-- **User:** Person who posts polls.
-- **Respondant:** Person who responds to polls and view results
+## المستخدمين
+- **المستخدم: **الشخص الذي ينشر استطلاعات الرأي
+- **المستجيب: **الشخص الذي يستجيب لاستطلاعات الرأي ويعرض النتائج
 
-## Requirements
+## متطلبات
 
-- [ ] User can post a poll questions.
-- [ ] Poll question can be active or inactive
-- [ ] Poll question will have title, question, active_until date, and responses.
-- [ ] User can create/edit/delete Poll questions using Admin interface
-- [ ] Website will show a list of active polls with a summary showing number of respondents.
-- [ ] Website will show a list of inactive polls with a summary showing number of respondents.
-- [ ] Poll is considered inactive if explicitly set to inactive or if active_until date has passed.
-- [ ] Respondents can view poll results for active or inactive polls
-- [ ] Respondents can only respond to active polls otherwise the poll is disabled with message showing that poll is inactive
-- [ ] Response options are only multiple choice.
-- [ ] Respondents can provide their names or remain anonymous
-- [ ] Time of response will be recorded for every response.
-- [ ] Poll results can be viewed as numeric counts, bar chart, or pie chart.
+- [] يمكن للمستخدم إرسال أسئلة الاستطلاع.
+- [] يمكن أن يكون سؤال الاستطلاع نشطًا أو غير نشط
+- [] سيكون لسؤال الاستطلاع العنوان والسؤال والتاريخ النشط حتى تاريخه والردود.
+- [] يمكن للمستخدم إنشاء / تعديل / حذف أسئلة الاستطلاع باستخدام واجهة المسؤول
+- [] سيعرض موقع الويب قائمة باستطلاعات الرأي النشطة مع ملخص يوضح عدد المستجيبين.
+- [] سيعرض موقع الويب قائمة باستطلاعات الرأي غير النشطة مع ملخص يوضح عدد المستجيبين.
+- [] يعتبر الاستطلاع غير نشط إذا تم تعيينه صراحة على "غير نشط" أو إذا انقضى تاريخ 
+- active_until.
+- [] يمكن للمستجيبين عرض نتائج الاستطلاع لاستطلاعات الرأي النشطة أو غير النشطة
+- [] يمكن للمستجيبين فقط الرد على استطلاعات الرأي النشطة وإلا يتم تعطيل الاستطلاع برسالة تظهر أن الاستطلاع غير نشط
+- [] خيارات الاستجابة ليست سوى خيارات متعددة.
+- [] يمكن للمستجيبين تقديم أسمائهم أو عدم الكشف عن هويتهم
+- [] سيتم تسجيل وقت الاستجابة لكل إجابة.
+- [] يمكن عرض نتائج الاستطلاع على أنها أعداد رقمية أو مخطط شريطي أو مخطط دائري.
 
-## ER-Diagram
+## ER- الرسم البياني
 
-The ER-Diagram describes the data requirements and will be used for constructing the project's data models in models.py. The blog data model is currently very simple and contains a single entity:
+يصف مخطط ER- متطلبات البيانات وسيتم استخدامه لإنشاء نماذج بيانات المشروع في Models.py. نموذج بيانات المدونة حاليًا بسيط جدًا ويحتوي على كيان واحد:
 
 ```mermaid
 erDiagram

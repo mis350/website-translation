@@ -36,7 +36,7 @@ This tells django that if someone opens the /admin/ path on the web application,
 
 Now try to login. You will notice that you cannot signup and you do not have access to the admin interface. To use the admin interface you need to create an admin user. To do that we need to make sure that the following is done:
 
-1. The tables in the database corresponding to the models in our Django project are created. There is more that Django is doing for us besides the blog model. It manages the authentication for the admin interface and will need to create tables for storing the credentials of the admin used. For this step we must run the following shell commands:
+1. The tables in the database corresponding to the models in our Django project are created. There is more that Django is doing for us besides the blog model. It manages the authentication for the admin interface and will need to create tables for storing the credentials of the admin used. If you haven't performed the migration step, now is the time to do it so Django will create the database tables used for our models and for authenticating the admin user. For this step we must run the following shell commands:
 
 ```bash
 python manage.py makemigrations
@@ -46,7 +46,7 @@ python manage.py migrate
 The first command will prepare all the SQL commands to create the database tables for our project. The second shell command will execute it and create the tables.
 
 2. Once the database is properly configured we can then create the admin user using the following shell command:
-3. 
+
 ```bash
 python manage.py createsuperuser
 
@@ -64,5 +64,8 @@ admin.site.register(Post)
 ```
 
 Here we imported the Post model, then registered it with the admin site. This tells Django that we want the Post model to be managed by the admin interface. Now login to the admin interface, and you will see that you can add/edit/delete blog posts from the admin interface. 
+
+{{< figure src="courses/350/djadmin/djadmin-main1.png" caption="Simple Django Admin for Post Model" size=80% >}}
+
 
 You can find our more on the admin interface by referring to [Django's documentation on the admin interface](https://docs.djangoproject.com/en/3.1/ref/contrib/admin/)

@@ -19,23 +19,23 @@ draft: True
 
 
 ---
-{{% callout note %}}
-Switch to branch **7-templates** from **malmarz/isom350-blog** github repo to see this step's implementation
-{{% /callout %}}
 
-This section assumed that you have an introductory understanding of HTML. Please read the following [introduction to HTML](https://www.w3schools.com/html/html_intro.asp) if you haven't worked with HTML before.
+قم بالتبديل إلى الفرع ** 7-قوالب ** من ** malmarz / isom350-blog ** github repo لمشاهدة تنفيذ هذه الخطوة
 
-Templates are just strings. They are very similar to fstrings in Python, but must more sophisticated. If you remember with fstring, we can have string placeholders where python would plugin values from variables:
+افترض هذا القسم أن لديك فهمًا تمهيديًا لـ HTML. يرجى قراءة ما يلي[مقدمة إلى HTML] (https://www.w3schools.com/html/html_intro.asp) إذا لم تكن قد عملت مع HTML من قبل.
 
-```python
-my_name = "Mohammad"
-greeting = f"Hello {my_name}"
-print(greeting)
-# Output: Hello Mohammad
-```
-Whatever the value contained in my_name, it will be placed by python in the slot `{my_name}`. Its a way to easily construct dynamic strings. Well templates are exactly just that. But instead of working simple short strings, templates are designed to be used with HTML files, which are just very long strings.
+القوالب هي مجرد سلاسل. إنها تشبه إلى حد بعيد الأوتار في بايثون ، لكن يجب أن تكون أكثر تعقيدًا. إذا كنت تتذكر باستخدام fstring ، فيمكننا الحصول على عناصر نائبة للسلسلة حيث تقوم python بإضافة قيم من المتغيرات:
 
-### Todo
-- create template directory
-- create html page with no placeholder
-- create htmlpage with placeholder
+"python"
+my_name = "محمد"
+تحية = f "مرحبًا {my_name}"
+طباعة (تحية)
+# المخرجات: مرحبا محمد
+""
+مهما كانت القيمة الموجودة في my_name ، سيتم وضعها بواسطة python في الفتحة "{my_name}". إنها طريقة لبناء سلاسل ديناميكية بسهولة. قوالب جيدة هي بالضبط ذلك فقط. ولكن بدلاً من العمل بسلاسل قصيرة بسيطة ، تم تصميم القوالب لتستخدم مع ملفات HTML ، وهي عبارة عن سلاسل طويلة جدًا.
+
+### لكى يفعل
+- إنشاء دليل القالب
+- إنشاء صفحة html بدون عنصر نائب
+- إنشاء صفحة html بعنصر نائب
+

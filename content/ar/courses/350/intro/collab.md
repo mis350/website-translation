@@ -118,87 +118,65 @@ graph TD
 {{% /callout %}}
 
 
-1. {{< icon name="github" pack="fab" >}} 
-
-**ايجاد مهمة أو تعديل للعمل عليه**: من مسؤوليات مدير المشروع التأكد من ان المطورين قادرين على ايجاد مهمات للعمل عليها, يمكن ايجادهم في قائمة المشكلات في Github, نظام التذاكر المستخدم في المشروع, التحدث مع مدير المشروع, أو قراءة مستند المتطلبات. لهذا المقرر, مدير المشروع يجب عليه كتابة المهمات على شكل مشكلات في Github. المطورين يمكنهم المساعدة ايضًا عن طريق اقتراح خاصيات جديدة أو وصف الأخطاء التي تحتاج لتصليح, سنناقش إدارة المشروع بتفصيل اكثر  [في القسم التالي]({{< ref "proj-mgt.md" >}}).
-
-2. {{< icon name="code" pack="fas" >}} 
-** استيراد مشروعك من Github**. كما هو موضح بالصورة. لابأس أيضًا استيراد نفس المشروع مرة أخرى في كل مرة تريد فيها بدء عمل جديد لضمان حصولك على نسخة جديدة من الكود.
+1. {{< icon name="github" pack="fab" >}} ** ابحث عن مهمة أو إصلاح للعمل عليها: ** تقع على عاتق مدير المشروع مسؤولية التأكد من أن المطورين يمكنهم العثور على المهام للعمل عليها. يمكن العثور عليها مدرجة في مشكلات GitHub أو نظام التذاكر المستخدم للمشروع أو التحدث إلى مدير المشروع أو قراءة مستند المتطلبات. بالنسبة لهذه الدورة التدريبية ، يجب على مديري المشاريع كتابة المهام على أنها مشكلات في GitHub. يمكن للمطورين أيضًا المساعدة عن طريق كتابة المشكلات التي يمكنها إما تحوير اقتراحات الميزات أو أوصاف الأخطاء التي تحتاج إلى إصلاح. سنناقش إدارة المشروع بمزيد من التفصيل في [القسم التالي] ({{<ref "proj-mgt.md">}}).
+2. {{<icon name = "code" pack = "fas">}} ** استورد مشروعك من GitHub ** كما هو موضح في الشكل. من الجيد أيضًا استيراد نفس المشروع مرة أخرى في كل مرة تريد فيها بدء عمل جديد لضمان حصولك على نسخة جديدة من الكود.
 {{< figure src="courses/350/replit-import-repo.png" caption="Import Repository from GitHub" >}}
-
-   
-
-   - **مهم: سحب التحديثات *Pull updates* للمشاريع الحالية**: اذا كنت لا تريد استيراد المشروع مرة أخرى وفقدان عملك في Replit, تأكد من **سحب** **"Pull"** التحديثات التي تم دمجها للفرع الرئيسي عن طريق مدير المشروع في Github. هذا سيضمن انك ستبدأ عملك مع النسخة الأحدث من الكود.
-
+   - ** هام: سحب التحديثات للمشاريع الحالية: ** إذا كنت لا تريد استيراد المشروع مرة أخرى وفقد عملك عند إعادة التثبيت ، فتأكد من ** سحب ** التحديثات التي تم دمجها في الفرع الرئيسي من قبل مدير المشروع على جيثب. سيضمن هذا أن تبدأ عملك بأحدث إصدار من الكود
 {{< figure src="courses/350/replit-pull-github.png" caption="Fetching Updates from GitHub" >}}
-3. {{< icon name="code" pack="fas" >}} 
+3. {{< icon name="code" pack="fas" >}} ** إنشاء فرع جديد: ** تسمح الفروع للمطور بتغيير الكود دون خوف من إفساد المشروع. عند البدء في مهمة برمجة ، قم دائمًا بإنشاء فرع git جديد للمهمة من الفرع الرئيسي. الفرع يسمح لك بتغيير الكود لك فقط ، ولا يؤثر على عمل الآخرين. عليك أن تتذكر دائمًا ما يلي:
+    - ** أبدا العمل مباشرة في الفرع الرئيسي **.
+    - ** انشاء فرع جديد ** من الفرع الرئيسي فقط.
+    - يجب أن يكون لدى الفرع الرئيسي ** دائمًا ** نسخة عمل من المشروع ، وليس نسخة مكسورة أبدًا.
+    - ** اختر اسمًا ** للفرع الجديد يعكس العمل المنجز. على سبيل المثال bug_1234 ، حيث يكون الرقم هو رقم الإصدار على جيثب. أو feature_1234. للتعرف على الأحرف المسموح بها في اسم الفرع [يرجى قراءة هذه المقالة](https://git-scm.com/docs/git-check-ref-format).
 
-**انشاء فرع "Branch" جديد**: الفروع تسمح للمطور بتغيير الكود دون خوف من افساد المشروع. عند البدأ في مهمة برمجة, دائمًا قم بإنشاء فرع للعمل من الفرع الرئيسي. الفروع تسمح لك بتغير الكود لديك فقط, وعدم التأثير على عمل الآخرينز تحتاج دائمًا لتذكر التالي: 
-
-   
-   - **لا تعمل على الفرع الرئيسي "أبدًا"**.
-   - **انشأ فرع جديد** من الفرع الرئيسي فقط.
-   - الفرع الرئيسي **يجب ان يكون دائمًا** لديه نسخة عمل من المشروع, وليس نسخة ناقصة أبدًا.
-   - **اختر الإسم** للفرع الجديد والذي يعكس العمل الذي تقوم به, علآ سبيل المثال bug_1234 ، حيث يكون الرقم هو رقم الإصدار على Github. أو feature_1234. للتعرف على الاحرف المسموح بها في اسماْ الافرع  [قم بقراءة المقال من فضلك](https://git-scm.com/docs/git-check-ref-format).
 
 
 {{< figure src="courses/350/git-replit.png" caption="Creating or Switching Branches on Replit.com" >}}
 
-4. {{< icon name="code" pack="fas" >}} 
-**العمل على مهمة**: تأكد من أن العمل الذي تقوم به بسيط وصغيرز اذا كان هنالك عمل معقد وكبير, قم بتجزأتهم إلى مهما اصغر.
-
-5. {{< icon name="code" pack="fas" >}} 
-**تسليم العمل**: عند الانتهاء من المهمة ، أو الوصول إلى مرحلة رئيسية في عملك ، يجب عليك تسليم بالعمل. سيسمح لك هذا بإنشاء لقطة للعمل الذي قمت به ليتم تخزينه في سجل github. ميزة هذا اللقطات بأنك تستطيع العودة لهذه النسخة من الكود بأي وقت. لهذا من الأفضل القيام بالتسليم بشكل متكرر حتى للتغيرات البسيطة. فقط تأكد عند قيامك بالتسليم من ان تكتب رسالة مفيدة للزمن لمعرفة العمل الذي قمت بتسليمه. يجب عليك دائمًا تسليم واختبار عملك و المتابعة بتغيير الكود وتسليمه حتى تتأكد من أن التغيرات التي قمت بفعلها مقبولة والمهمة تمت.
-
+4. {{< icon name="code" pack="fas" >}} ** العمل على المهمة **: تأكد من أن المهمة التي تعمل عليها صغيرة وبسيطة. إذا كانت هناك مهام كبيرة ومعقدة ، فقسِّمها إلى مهام أصغر.
+5. {{< icon name="code" pack="fas" >}} ** الالتزام بالمهمة **: عند الانتهاء من المهمة ، أو الوصول إلى مرحلة رئيسية في عملك ، يجب عليك الالتزام بالعمل. سيسمح لك هذا بإنشاء لقطة للعمل الذي قمت به ليتم تخزينه في سجل github. ميزة الحصول على لقطة الالتزام هي أنه يمكنك العودة إلى هذا الإصدار من الكود في أي وقت. لذلك ، يوصى بالالتزام بشكل متكرر وحتى لإجراء تغييرات صغيرة. فقط تأكد عندما تلتزم أنك تكتب رسالة مفيدة للتاريخ لمعرفة ما فعلته في هذا الالتزام. يجب عليك دائمًا الالتزام بعملك واختباره والاستمرار في تغيير الكود والالتزام حتى تتأكد من أن التغييرات التي أجريتها مقبولة واكتمال المهمة.
    {{< figure src="courses/350/replit-commit.png" caption="Commit Your Work to Store It on GitHub" >}}
-6. {{< icon name="github" pack="fab" >}} 
-**إرسال طلب سحب "Pull request"**: اذا تأكدت من ان المهمة تمت استخدم GitHub لإرسال طلب السحب. طلب السحب يخبر مدير المشروع ان العمل العمل في هذا الفرع اكتمل واصبح جاهز لإضافته للفرع الرئيسي. من مسؤولية المدير الاستجابة لطلب السحب ودمجة مع الفرع الرئيسي. طلب السحب يمكن لدمج فرعين من نفس المستودع, كما سنفعل في الغالب في هذه الدورة. وهذا هو الحال بالنسبة لأعضاء الفريق الذين يعملون على نفس الريبو: 
-
+6. {{< icon name="github" pack="fab" >}} ** أرسل طلب سحب **: إذا كنت متأكدًا من اكتمال المهمة ، فاستخدم github لإرسال طلب سحب. يخبر طلب السحب مدير المشروع أن العمل في هذا الفرع مكتمل وجاهز لإضافته إلى الفرع الرئيسي. تقع على عاتق مدير المشروع مسؤولية الاستجابة لطلب السحب ودمجه في الفرع الرئيسي. يمكن أن يكون طلب السحب هو دمج فرعين من نفس المستودع ، كما سنفعل في الغالب في هذه الدورة. هذا هو الحال بالنسبة لأعضاء الفريق الذين يعملون على نفس الريبو:
 {{< figure src="courses/350/pr-simple.png" caption="Creating a Simple Pull Request to Merge Branch nn Current Repo" >}}
 
-يمكن استخدامه أيضًا لطلب دمج الفروع بين مستودعات تشعبة "Forked" والسماح لك بإرسال عملك إلى مشروع لست عضوًا فيه:
-
+يمكن استخدامه أيضًا لطلب دمج الفروع بين افرع متشعبة والسماح لك بإرسال عملك إلى مشروع لست عضوًا فيه:
 {{< figure src="courses/350/pr-forks.png" caption="Creating a Pull Request To Merge Branch From Forked Repo" >}}
 
+بمجرد إنشاء طلب سحب ، يمكن لمدير المشروع وأعضاء الفريق مناقشة طلب السحب هذا ومعرفة ما تم القيام به حتى الآن بواسطة مدير المشروع فيما يتعلق بالمسألة.
 
-ما أن يتم انشاء طلب سحب, مدير المشروع وأعضاء الفريق يمكنهم مناقشة طلب السحب هذا ورؤية ما تم عمله حتى الآن بواسطة مدير المشروع بخصوص هذه المسألة.
 
 {{< figure src="courses/350/pr-discussion.png" caption="Memebers Can Open the Pull Request to See all Change Details and Discussion" >}}
 
 
-متوقع من الجميع اتباع هذه الخطوات عندما تعمل على مشاريع تطوير في هذا المقرر. قد يبدو الأمر وكأنه عبء في البداية ، ولن ترى الفوائد على الفور. ومع ذلك ، فإن الهدف هو جعلك تتدرب على كيفية البرمجة كجزء من فريق. لذلك عندما تبدأ مشروعك النهائي ، ستبدأ في رؤية فوائد سير العمل هذا.
+يُتوقع من الجميع اتباع هذه الخطوات عندما تعمل على مشاريع تطوير في هذه الدورة. قد يبدو الأمر وكأنه عبء في البداية ، ولن ترى الفوائد على الفور. ومع ذلك ، فإن الهدف هو جعلك تتدرب على كيفية البرمجة كجزء من فريق. لذلك عندما تبدأ مشروعك النهائي ، ستبدأ في رؤية فوائد سير العمل هذا.
 
 
 
-## Git and GitHub
+## Git و GitHub
 
-اعلم أن الأداة التي نستخدمها للتعاون غير المتزامن تُعرف باسم ** Git **. يسمح للمطورين بتتبع جميع التغييرات التي تم إجراؤها على مشاريعهم. يمكن استخدامه على كمبيوتر المطور باستخدام سطر الأوامر أو تطبيق سطح المكتب GitHub. يمكنك استخدامه بدون GitHub
+اعلم أن الأداة التي نستخدمها للتعاون غير المتزامن تُعرف باسم ** Git **. يسمح للمطورين بتتبع جميع التغييرات التي تم إجراؤها على مشاريعهم. يمكن استخدامه على كمبيوتر المطور باستخدام سطر الأوامر أو تطبيق سطح المكتب GitHub. يمكنك استخدامه بدون جيثب.
 
-
-
-GitHub هو "Cloud Platform" تستضيف خدمات Git. تعتبر منصة تواصل اجتماعي للمطورين مبنية حول تطبيق Git. لأن Git مفيد جدًا للمطورين والمبرمجين تم استضافتها مجانًا في منصتهم, بشرط أن تكون المستودعات عامة, يمكنك أن تدفع رسوم اشتىاك اذا كنت تىغب بإمتلاك مستودع خاص. بالإضافة إلى أن GitHub قامت ببناء مجموعة من أدوات إدارة المشروع و أدوات البرمجة الإجتماعية حول Git. المشكلات, الفئات والفصول, المشاريع, طلبات السحب, وملفات المطورين كلها لا تعد جزء من Git, لكن تمت اضافتهم خصيصًا ل GitHub ولجعل البرمجة عمل جماعي أكثر. سنستخدم العديد من هذه المميزات لتحسين التعاون ولأهداف ادارة المشروع 
+GitHub هو النظام الأساسي السحابي الذي يستضيف خدمات Git. إنها منصة وسائط اجتماعية للمطورين مبنية حول تطبيق Git. نظرًا لأن Git مفيد جدًا للمطورين ، يتم استضافته على نظامهم الأساسي ليستخدمه الجميع مجانًا ، بشرط أن يجعلوا مستودعاتهم عامة. يمكنك دفع اشتراك إذا كنت ترغب في الحصول على مستودعات خاصة. علاوة على ذلك ، أنشأ GitHub مجموعة من أدوات إدارة المشاريع وأدوات الترميز الاجتماعي حول Git. لا تعد المشكلات والفصول الدراسية والمشاريع وطلبات السحب وملفات تعريف المطورين جزءًا من Git ، ولكن تمت إضافتها خصيصًا لـ GitHub ولجعل الترميز أكثر اجتماعية. سنستخدم العديد من هذه الميزات لتحسين التعاون ولأغراض إدارة المشروع.
 
 
-
-هناك العديد من المصطلحات التي يجب أن تكون على دراية بها لاستخدام Git و GitHub بشكل فعال. نلخصها في الجدول التالي. يحدد النطاق "Domain" ما إذا كان هذا المصطلح خاصًا بتطبيق Git أو تم تقديمه كجزء من الميزات الاجتماعية الإضافية التي أنشأها GitHub:
-
-### Git and GitHub Terminology
+هناك العديد من المصطلحات التي يجب أن تكون على دراية بها لاستخدام Git و GitHub بشكل فعال. نلخصها في الجدول التالي. يحدد المجال ما إذا كان هذا المصطلح خاصًا بتطبيق Git أو تم تقديمه كجزء من الميزات الاجتماعية الإضافية التي أنشأها GitHub:
+### Git و GitHub Terminology
 
 | **Term** | **Domain** | **Meaning** |
 | --- | --- | --- |
-| **Repo/Repository** | Git | A repository is where the source code and history of all actions and changes done to it resides. A local repo exists on the developer&#39;s computer and is required for the developer to do work. A remote repo is one that exists on another machine. A GitHub repo is hosted on GitHub to make it accessible for other developers and is considered a remote repo to all developers. |
-| **Clone** | Git | Creating a local copy of a repo. The copied repo can be either remote or local |
-| **Fork** | GitHub | Similar to a clone but it occurs on GitHub servers. A GitHub repo is created as a copy from another GitHub repo. The new repo will have its own project space, including issues, wikis, and discussions. |
-| **Commit** | Git | In CVCS, commit is the act of publishing changes, made locally, to the central repo. For Git, it is an instruction for Git to take a snapshot of the code base in its current state. The snapshot is referred to as a revision. Committing the code base would create the revision locally. To transfer the revision to another repository, the local developer must push it, or an external developer must pull it. |
-| **Rev/Revision** | Git | A snapshot of the code base taken by the commit command. A revision is represented by a SHA1 string that is unique to that revision. A developer can switch to any previous state of the code base, whether as a whole or as a single file, by referring to the revision number. |
-| **Checkout** | Git | An action to revert the code base, a file, or a group of files to a specific revision |
-| **Branch** | Git | Creating a named copy of the source code hosted in a repo that allows the developer to experiment and make changes to the source code and commit them to create new revisions. The developer can delete the branch if not satisfied with the work and discard all the revisions made in the branch, or the developer can merge the branch to the master branch, thereby making the new revisions part of the master. |
-| **Master branch** | Git | The main branch used to host all code that has been accepted (the master copy). Developers typically do not work directly on the master branch but create alternative branches to work on, then merge accepted code changes to it. Whenever developers need to start with a fresh copy of the code base, they typically branch out of master. |
-| **Merge** | Git | Combining the revisions from two different branches is known as merging. It is performed automatically on pulling or pushing branches. The merging can occur smoothly and automatically if the revisions have no conflict. This is known as a fast-forward merge. If the combined revisions are in conflict, then the developer must resolve the conflict in all the files manually, then explicitly perform the merge. |
-| **Conflict** | Git | A conflict occurs when two revisions change the same line, and these changes cannot be consolidated. Git will highlight these lines for the developer and include both lines from each revision so the developer can view them side by side and manually combine them. Once all the files with such conflicts are resolved and saved, the developer must manually issue a merge command for Git to accept the conflict resolution. |
-| **Push** | Git | An action that would allow the developer to pull revisions from another branch to the branch the developer is currently working on. Only the revisions unique to the branch being pulled from are moved to the working branch. The branches do not have to be on the same repo. The developer can pull a branch from a remote repo. A push cannot be performed if there is a conflict between the working branch and the remote branch. The developer must pull the remote branch first, resolve any conflict, then push the merged revisions. |
-| **Pull** | Git | An action that would allow the developer to send revisions to a branch from the branch the developer is currently working on. Only revisions unique to the working branch are sent to the other branch. The branch being pushed to can be on the local repo or a remote repo. |
-| **Pull Request** | GitHub | An action popularized by GitHub. To pull from a remote branch, the developer needs to know the address of the remote machine. GitHub streamlined this process by allowing the developer with new revisions to send a request from his/her repo to another repo on GitHub. The repo would include information on the address and branch to pull from. The developer receiving the pull request can view the changes, have a conversation about them, and either accept or reject them. If accepted, the changes are merged to the repo the pull request was sent to. |
-| **Upstream** | Git | The chain of remote repositories that the current repo cloned from. Pushing code upstream requires effort, as conflict must be eliminated. Pull requests are typically sent to repos in the upstream. |
-| **Downstream** | Git | The network of all repos that have been cloned from the current repo. Code trickles down effortlessly, as the responsibility of resolving conflict is delegated to the developers in the downstream when they pull from the current repo. |
+| **Repo/Repository** | Git | المستودع هو المكان الذي يوجد فيه كود المصدر وسجل جميع الإجراءات والتغييرات التي تم إجراؤها عليه. يوجد ريبو محلي على كمبيوتر المطور وهو مطلوب للمطور للقيام بالعمل. الريبو البعيد هو الموجود على جهاز آخر. يتم استضافة GitHub repo على GitHub لجعله متاحًا للمطورين الآخرين ويعتبر بمثابة مستودع بعيد لجميع المطورين. |
+| **Clone** | Git | إنشاء نسخة محلية من الريبو. يمكن أن يكون الريبو المنسوخ بعيدًا أو محليًا |
+| **Fork** | GitHub | يشبه الاستنساخ ولكنه يحدث على خوادم GitHub. يتم إنشاء GitHub repo كنسخة من مستودع GitHub آخر. سيحتوي الريبو الجديد على مساحة المشروع الخاصة به ، بما في ذلك المشكلات ومواقع wiki والمناقشات. |
+| **Commit** | Git | في CVCS ، الالتزام هو عملية نشر التغييرات ، التي يتم إجراؤها محليًا ، إلى الريبو المركزي. بالنسبة لـ Git ، من تعليمات Git أن تأخذ لقطة من قاعدة التعليمات البرمجية في حالتها الحالية. يشار إلى اللقطة بالمراجعة. سيؤدي الالتزام بقاعدة الشفرة إلى إنشاء المراجعة محليًا. لنقل المراجعة إلى مستودع آخر ، يجب على المطور المحلي دفعها ، أو يجب على مطور خارجي سحبها.|
+| **Rev/Revision** | Git | لقطة من قاعدة التعليمات البرمجية مأخوذة بواسطة أمر التنفيذ. يتم تمثيل المراجعة بواسطة سلسلة SHA1 الفريدة لتلك المراجعة. يمكن للمطور التبديل إلى أي حالة سابقة لقاعدة التعليمات البرمجية ، سواء كانت كاملة أو كملف واحد ، من خلال الرجوع إلى رقم المراجعة. |
+| **Checkout** | Git | إجراء لإعادة قاعدة التعليمات البرمجية أو ملف أو مجموعة ملفات إلى مراجعة معينة |
+| ** فرع ** | بوابة | إنشاء نسخة مُسماة من الكود المصدري المُستضاف في مستودع يسمح للمطور بالتجربة وإجراء تغييرات على الكود المصدري وإلزامهم بإنشاء مراجعات جديدة. يمكن للمطور حذف الفرع إذا لم يكن راضيًا عن العمل وتجاهل جميع المراجعات التي تم إجراؤها في الفرع ، أو يمكن للمطور دمج الفرع في الفرع الرئيسي ، وبالتالي جعل المراجعات الجديدة جزءًا من الرئيسي. |
+| **Master branch** | Git | يستخدم الفرع الرئيسي لاستضافة جميع الكود الذي تم قبوله (النسخة الرئيسية). لا يعمل المطورون عادةً على الفرع الرئيسي مباشرةً ولكن ينشئون فروعًا بديلة للعمل عليها ، ثم يدمجون تغييرات التعليمات البرمجية المقبولة فيه. عندما يحتاج المطورون إلى البدء بنسخة جديدة من قاعدة التعليمات البرمجية ، فإنهم عادةً ما يتفرعون عن النظام الرئيسي. |
+| **Merge** | Git | يُعرف الجمع بين المراجعات من فرعين مختلفين باسم الدمج. يتم إجراؤه تلقائيًا عند سحب الفروع أو دفعها. يمكن أن يتم الدمج بسلاسة وبشكل تلقائي إذا لم يكن هناك تعارض بين المراجعات. يُعرف هذا باسم دمج التقديم السريع. إذا كانت المراجعات المجمعة متعارضة ، فيجب على المطور حل التعارض في جميع الملفات يدويًا ، ثم إجراء الدمج بشكل صريح. |
+| **Conflict** | Git | يحدث التعارض عندما تقوم مراجعتان بتغيير نفس السطر ، ولا يمكن دمج هذه التغييرات. سوف يبرز Git هذه الخطوط للمطور ويتضمن كلا السطرين من كل مراجعة حتى يتمكن المطور من عرضها جنبًا إلى جنب والجمع بينهما يدويًا. بمجرد حل جميع الملفات التي تحتوي على مثل هذه التعارضات وحفظها ، يجب على المطور إصدار أمر دمج يدويًا لـ Git لقبول حل التعارض. |
+| **Push** | Git | إجراء من شأنه أن يسمح للمطور بسحب المراجعات من فرع آخر إلى الفرع الذي يعمل عليه المطور حاليًا. يتم فقط نقل المراجعات الفريدة للفرع الذي يتم سحبه منه إلى فرع العمل. لا يجب أن تكون الفروع في نفس الريبو. يمكن للمطور سحب فرع من الريبو البعيد. لا يمكن إجراء الدفع إذا كان هناك تعارض بين فرع العمل والفرع البعيد. يجب على المطور سحب الفرع البعيد أولاً ، وحل أي تعارض ، ثم دفع المراجعات المدمجة. |
+| **Pull** | Git | إجراء من شأنه أن يسمح للمطور بإرسال مراجعات إلى فرع من الفرع الذي يعمل عليه المطور حاليًا. يتم إرسال المراجعات الفريدة لفرع العمل فقط إلى الفرع الآخر. يمكن أن يكون الفرع الذي يتم دفعه في الريبو المحلي أو الريبو البعيد. |
+| **Pull Request** | GitHub | عمل شاع بواسطة GitHub. للسحب من فرع بعيد ، يحتاج المطور إلى معرفة عنوان الآلة البعيدة. قام GitHub بتبسيط هذه العملية من خلال السماح للمطور بمراجعات جديدة بإرسال طلب من الريبو الخاص به إلى مستودع آخر على GitHub. سيتضمن الريبو معلومات عن العنوان والفرع المطلوب السحب منه. يمكن للمطور الذي يتلقى طلب السحب عرض التغييرات وإجراء محادثة حولها وقبولها أو رفضها. إذا تم قبول التغييرات ، يتم دمجها في الريبو الذي تم إرسال طلب السحب إليه. |
+| **Upstream** | Git | سلسلة المستودعات البعيدة التي تم نسخ الريبو الحالي منها. يتطلب دفع الكود إلى أعلى مجهودًا ، حيث يجب القضاء على التعارض. عادةً ما يتم إرسال طلبات السحب إلى المستودعات في المنبع. |
+| **Downstream** | Git | شبكة جميع المستودعات التي تم استنساخها من الريبو الحالي. تتدفق التعليمات البرمجية دون عناء ، حيث يتم تفويض مسؤولية حل التعارض إلى المطورين في المصب عندما ينسحبون من الريبو الحالي. |
 
